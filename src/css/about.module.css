@@ -1,3 +1,14 @@
-.text{
-    font-size: 12rem;
+main{
+    width: 100vw;
+    background-color: lightblue;
+}
+
+.boxes{
+    background-color: lightpink;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(334px, 3fr));
+}
+
+.logoDog{
+    width: 30%;
 }
