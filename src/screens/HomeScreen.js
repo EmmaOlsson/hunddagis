@@ -15,6 +15,8 @@ const HomeScreen = () => {
         <p>Inlämning: 07:00 - 09:00</p>
         <p>Hämtning: 14:00 - 17:30</p>
       </article>
+      <h5>Intresserad av en dagisplats?</h5>
+      <button className={Styles.applicationButton} >Skicka ansökan</button>
       </div>
     </section>
   )
