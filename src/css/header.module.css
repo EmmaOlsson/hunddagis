@@ -1,10 +1,9 @@
 header {
   display: flex;
-  width: 90%;
-  height: 20vh;
-  max-height: 5rem;
-  margin: 0 auto;
-  border-bottom: 1px solid #5d728d;
+  width: 100%;
+  height: 7rem;
+  padding: 0 5%;
+  background: var(--white-blue);
 }
 
 .logoContainer {
@@ -14,7 +13,7 @@ header {
 }
 
 .imgLogo {
-  width: 100px;
+  width: 110px;
 }
 
 .logoContainer h3 {
@@ -32,36 +31,47 @@ nav {
   list-style: none;
   display: flex;
   width: 100%;
-  max-width: 20rem;
+  max-width: 22rem;
   justify-content: space-between;
 }
 
 .navListItem {
   cursor: pointer;
   font-size: 1rem;
+  color: var(--black-sky);
+}
+
+.navListItem:hover {
+  color: var(--hundkojan-blue);
 }
 
 .hamburgerMenu {
   display: none;
+  color: var(--hundkojan-blue);
 }
 
 @media only screen and (max-width: 650px) {
-  .logoContainer h3 {
-    font-size: 0.8rem;
-  }
-
   .navList {
-    max-width: 16rem;
+    max-width: 20rem;
   }
 
   .navListItem {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
 @media only screen and (max-width: 500px) {
+  header {
+    height: 6rem;
+    transition: linear 0.3s;
+  }
   .hamburgerMenu {
     display: flex;
+  }
+
+  .imgLogo {
+    transform: scale(0.8);
+    transition: linear 0.3s;
   }
 
   .navList {
@@ -78,15 +88,15 @@ nav {
     justify-content: space-around;
     align-items: center;
     position: absolute;
-    left: 5%;
-    top: 5rem;
-    width: 90%;
-    max-width: 90%;
+    left: 0;
+    top: 6rem;
+    width: 100%;
+    max-width: 100%;
     height: 140px;
-    background: rgb(255, 255, 255);
+    background: var(--white-blue);
   }
 
   .navListItem {
-    border-bottom: 1px solid #5d728d;
+    border-bottom: 1px solid var(--light-blue);
   }
 }
