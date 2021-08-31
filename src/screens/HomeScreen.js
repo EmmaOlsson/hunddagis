@@ -9,7 +9,12 @@ const HomeScreen = () => {
     <section>
       <div>
       <img className={Styles.mainImg} src={happyDogsImg} alt="picture-of-happy-dogs" ></img>
-      <article className={Styles.welcomeText} >Välkommen till Hundkojans hunddagis</article>
+      <article className={Styles.welcomeText} >
+        <h3>Hundkojans hunddagis</h3>
+        <p>Våra öppettider</p>
+        <p>Inlämning: 07:00 - 09:00</p>
+        <p>Hämtning: 14:00 - 17:30</p>
+      </article>
       </div>
     </section>
   )
