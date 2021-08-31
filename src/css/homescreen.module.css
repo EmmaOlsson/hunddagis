@@ -1,8 +1,60 @@
 
-.mainImg {
-    width: 100vw;
+.mainContainer {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
-.welcomeText {
+.mainImg {
+    width: 100%;
+    opacity: 80%;
+    position: relative;
+}
 
+.mainText {
+    position: relative;
+    bottom: 13.25rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+/*     margin: 10px; */
+    align-items: flex-end;
+/*     background-color: var(--white-regular);
+    opacity: 60%; */
+    padding: 1rem;
+}
+
+.infoBox {
+
+}
+
+.applicationBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    background-color: var(--grey-blue);
+    border-radius: 50%;
+/*     margin: 20px; */
+    padding: 25px;
+}
+
+.applicationBox h5 {
+    /* margin: 0 auto; */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.applicationButton {
+    color: var(--black-regular);
+    background-color: var(--sky-blue);
+    padding: 5px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    box-shadow: var(--white-blue);
 }
