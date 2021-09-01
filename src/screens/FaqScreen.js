@@ -1,43 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Styles from '../css/faq.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import faqData from '../assets/graphics/data/faqData';
 
 const FaqScreen = () => {
   const [open, setOpen] = useState(null);
-  const [questions, setQuestions] = useState([
-    {
-      question: 'Hur många hundar tar ni emot samtidigt?',
-      answer:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis earum corrupti officia magni, quisquam cumque dolorem praesentium',
-    },
-    {
-      question: 'Hur ser en dag ut hos er?',
-      answer:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis earum corrupti officia magni, quisquam cumque dolorem praesentium',
-    },
-    {
-      question: 'Hur lång tid tar det att få en dagisplats?',
-      answer:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis earum corrupti officia magni, quisquam cumque dolorem praesentium',
-    },
-    {
-      question: 'Tar ni emot alla raser?',
-      answer:
-        'Lorem, ipsum dolor sit amet conectetur adipisicing elit. Nobis earum corrupti officia magni, quisquam cumque dolorem praesentium',
-    },
-    {
-      question: 'Kan man ha hundar över natten hos er?',
-      answer:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis earum corrupti officia magni, quisquam cumque dolorem praesentium',
-    },
-    {
-      question: 'Tar ni emot okastrerade hundar?',
-      answer:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis earum corrupti officia magni, quisquam cumque dolorem praesentium',
-    },
-  ]);
+  const [questions, setQuestions] = useState([]);
+
+  useEffect(() => {
+    setQuestions(faqData);
+  }, []);
 
   return (
     <div className={Styles.mainContainer}>
