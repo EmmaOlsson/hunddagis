@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Styles from '../css/faq.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const FaqScreen = () => {
   const [open, setOpen] = useState(null);
@@ -41,6 +42,14 @@ const FaqScreen = () => {
   return (
     <div className={Styles.mainContainer}>
       <h3 className={Styles.heading}>Vanliga frågor</h3>
+      <p className={Styles.description}>
+        Självklart har du som ägare av en fyrbent vän många frågor. Här har vi
+        samlat de vanligaste frågorna med svar. Skulle svaret på din fråga inte
+        finnas är du välkommen att kontakta oss{' '}
+        <Link to='/contact' className={Styles.contactLink}>
+          här!
+        </Link>
+      </p>
       {questions.map((question, index) => (
         <div className={Styles.questionWrapper} key={index}>
           <div className={Styles.questionContainer}>
@@ -51,12 +60,10 @@ const FaqScreen = () => {
           </div>
           <div className={Styles.buttonContainer}>
             <FontAwesomeIcon
-              icon={faAngleDown}
+              icon={open === index ? faAngleUp : faAngleDown}
               className={Styles.showAnswer}
               onClick={() => (open === index ? setOpen(null) : setOpen(index))}
-            >
-              show answer
-            </FontAwesomeIcon>
+            ></FontAwesomeIcon>
           </div>
         </div>
       ))}
