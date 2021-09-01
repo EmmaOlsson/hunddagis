@@ -20,8 +20,8 @@
 
 .priceList{
     flex: 2;
+    text-align: center;
 }
-
 
 .bottomAbout{
     height: 20vh;
@@ -32,13 +32,20 @@
     margin-bottom: 1rem;
 }
 
-.aboutInfo p span {
+.aboutInfo p{
+    font-weight: 400;
+}
+
+.aboutInfo span{
     line-height: 1.5rem;
+    display: inline-block;
+    padding-top: .4rem;
 }
 
 ul{
     line-height: 150%;
 }
+
 
 @media only screen and (max-width: 800px){
     .topAbout{

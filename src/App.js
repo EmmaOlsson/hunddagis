@@ -8,6 +8,7 @@ import HomeScreen from './screens/HomeScreen';
 import AboutScreen from './screens/AboutScreen';
 import FaqScreen from './screens/FaqScreen';
 import ContactScreen from './screens/ContactScreen';
+import BlogScreen from './screens/BlogScreen';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/about' component={AboutScreen} />
         <Route path='/faq' component={FaqScreen} />
         <Route path='/contact' component={ContactScreen} />
+        <Route path='/blog' component={BlogScreen} />
         <Footer />
       </div>
     </Router>
