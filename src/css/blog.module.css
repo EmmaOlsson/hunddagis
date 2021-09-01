@@ -1,0 +1,35 @@
+.mainContainer{
+    width: 90%;
+    margin:0 auto;
+}
+
+.topAbout{
+    height: 100%;
+    display: flex;
+}
+
+.blogPosts, .latestPictures{
+    background: var(--white-blue);
+    padding: 2rem;
+}
+
+.blogPosts{
+    flex: 3;
+    margin-right: .5rem;
+}
+
+.latestPictures{
+    flex: 2;
+}
+
+
+@media only screen and (max-width: 800px){
+    .topAbout{
+        flex-direction: column;
+    }
+
+    .blogPosts{
+        margin-bottom: .5rem;
+        margin-right: 0;
+    }
+}
