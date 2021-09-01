@@ -1,9 +1,17 @@
 import React from 'react';
 import Styles from '../css/about.module.css'
 
-import logoDog from '../assets/graphics/Hund-logo-color.png'
+import staffData from '../assets/data/staff.json'
+
+// import logoDog from '../assets/graphics/Hund-logo-color.png'
+
+
+
 
 const AboutScreen = () => {
+  
+  
+
   return <section>
     <main className={Styles.mainContainer}>
       <div className={Styles.topAbout}>
@@ -46,6 +54,7 @@ const AboutScreen = () => {
       <div className={Styles.bottomAbout}>
         <article className={Styles.staffInfo}>
           <h2 className={Styles.aboutTitles}>Vår personal</h2>
+
         </article>
       </div>
     </main>
