@@ -1,0 +1,13 @@
+
+.mainFooter {
+    width: 100%;
+    height: 20rem;
+/*     height: 100%; */
+    background-color: var(--white-blue);
+    margin: 0 auto;
+}
+
+.navFooterItem nav {
+    display: flex;
+    flex-direction: column;
+}

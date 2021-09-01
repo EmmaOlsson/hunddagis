@@ -1,48 +1,78 @@
 
+.mainSection {
+/*     height: 100%; */
+/*     width: 90%; */
+border: 2px solid orange;
+}
 .mainContainer {
     width: 90%;
+/*     height: 100%; */ /* Que? */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+/*     border: greenyellow 2px solid; */
 }
 
 .mainImg {
     width: 100%;
-    opacity: 80%;
+    height: 100%;
+    opacity: 60%;
     position: relative;
+}
+
+.textContainer {
+/*     position: relative;
+    bottom: 13.25rem; */
+/*     background-color: var(--white-regular); */
+/*     opacity: 60%; */
 }
 
 .mainText {
+    width: 90%;
+    margin: 0 auto;
+/*     border: 2px solid pink; */
     position: relative;
     bottom: 13.25rem;
+    color: var(--black-regular);
     display: flex;
     flex-direction: row;
-    width: 100%;
     height: 100%;
-    justify-content: space-between;
-/*     margin: 10px; */
+    /* justify-content: space-between; */
+/*     margin: 2rem; */
     align-items: flex-end;
 /*     background-color: var(--white-regular);
     opacity: 60%; */
-    padding: 1rem;
+    padding: 0 6rem 2rem 4rem;
 }
 
 .infoBox {
-
+    color: var(--black-regular);
+    line-height: 1.5rem;
 }
 
 .applicationBox {
+    background-color: var(--light-blue);
+    opacity: 50%;
+
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+/*     margin: 20px; */
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+}
+
+.applicationBoxContent {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 180px;
-    height: 180px;
-    background-color: var(--grey-blue);
-    border-radius: 50%;
-/*     margin: 20px; */
-    padding: 25px;
+    position: relative;
+    bottom: 4rem;
+
 }
+
 
 .applicationBox h5 {
     /* margin: 0 auto; */
@@ -55,6 +85,11 @@
     background-color: var(--sky-blue);
     padding: 5px;
     text-transform: uppercase;
+    cursor: pointer;
     border-radius: 4px;
-    box-shadow: var(--white-blue);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.applicationButton:hover {
+    opacity: 80%;
 }
