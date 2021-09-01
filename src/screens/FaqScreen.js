@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 const FaqScreen = () => {
+  const [open, setOpen] = useState(null);
   const [questions, setQuestions] = useState([
     {
       question: 'question1',
@@ -41,10 +42,14 @@ const FaqScreen = () => {
         <div key={index}>
           <div className='question-container'>
             <h5>{question.question}</h5>
-            <h6>{question.answer}</h6>
+            <h6>{open === index ? question.answer : ''}</h6>
           </div>
           <div className='button-container'>
-            <button>show answer</button>
+            <button
+              onClick={() => (open === index ? setOpen(null) : setOpen(index))}
+            >
+              show answer
+            </button>
           </div>
         </div>
       ))}
