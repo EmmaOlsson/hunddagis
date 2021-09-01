@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const FaqScreen = () => {
   const [questions, setQuestions] = useState([
@@ -34,7 +34,22 @@ const FaqScreen = () => {
     },
   ]);
 
-  return <div>FAQ</div>;
+  return (
+    <div>
+      <h3>Vanliga frågor</h3>
+      {questions.map((question, index) => (
+        <div key={index}>
+          <div className='question-container'>
+            <h5>{question.question}</h5>
+            <h6>{question.answer}</h6>
+          </div>
+          <div className='button-container'>
+            <button>show answer</button>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
 };
 
 export default FaqScreen;
