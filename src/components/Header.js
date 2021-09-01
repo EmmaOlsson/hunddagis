@@ -17,6 +17,9 @@ const Header = () => {
           <Link to='/about' className={Styles.navListItem}>
             Om oss
           </Link>
+          <Link to='/blog' className={Styles.navListItem}>
+            Blogg
+          </Link>
           <Link to='/faq' className={Styles.navListItem}>
             Vanliga Frågor
           </Link>
