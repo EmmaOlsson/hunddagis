@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Styles from '../css/faq.css';
+import Styles from '../css/faq.module.css';
 
 const FaqScreen = () => {
   const [open, setOpen] = useState(null);
