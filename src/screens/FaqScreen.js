@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Styles from '../css/faq.css';
 
 const FaqScreen = () => {
   const [open, setOpen] = useState(null);
@@ -37,15 +38,18 @@ const FaqScreen = () => {
 
   return (
     <div>
-      <h3>Vanliga frågor</h3>
+      <h3 className={Styles.heading}>Vanliga frågor</h3>
       {questions.map((question, index) => (
-        <div key={index}>
-          <div className='question-container'>
-            <h5>{question.question}</h5>
-            <h6>{open === index ? question.answer : ''}</h6>
+        <div className={Styles.questionWrapper} key={index}>
+          <div className={Styles.questionContainer}>
+            <h5 className={Styles.question}>{question.question}</h5>
+            <p className={Styles.answer}>
+              {open === index ? question.answer : ''}
+            </p>
           </div>
-          <div className='button-container'>
+          <div className={Styles.buttonContainer}>
             <button
+              className={Styles.showAnswer}
               onClick={() => (open === index ? setOpen(null) : setOpen(index))}
             >
               show answer
