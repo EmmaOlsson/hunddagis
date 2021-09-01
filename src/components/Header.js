@@ -12,7 +12,7 @@ const Header = () => {
       <Link to='/' className={Styles.logoContainer}>
         <img className={Styles.imgLogo} src={logo} alt='logo' />
       </Link>
-      <nav>
+      <nav className={Styles.nav}>
         <ul className={Styles.navList} id={isOpen ? `${Styles.hidden}` : ''}>
           <Link to='/about' className={Styles.navListItem}>
             Om oss
