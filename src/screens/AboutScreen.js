@@ -13,8 +13,6 @@ const AboutScreen = () => {
 
   }, [])
 
-  console.log('hej', staffData)
-
   return <section>
     <main className={Styles.mainContainer}>
       {/* About */}
