@@ -95,7 +95,6 @@ export default {
         Pictures: {
             title: "Latest pictures"
         },
-
     },
 
 }
