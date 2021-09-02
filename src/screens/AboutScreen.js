@@ -1,19 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Styles from '../css/about.module.css'
-
-import staffData from '../assets/data/staff.json'
-
-// import logoDog from '../assets/graphics/Hund-logo-color.png'
-
+import dog from '../assets/graphics/dog-logo-paws.png'
 
 
 
 const AboutScreen = () => {
-  
-  
+
+  const [staffData, setStaffData] = useState([])
+
+  useEffect(() => {
+    fetch('staff.json')
+      .then((response) => {
+        return response.json()
+      })
+      .then((data) => {
+        setStaffData(data)
+      })
+
+  }, [])
+
+  console.log('hej', staffData)
 
   return <section>
     <main className={Styles.mainContainer}>
+      {/* About */}
       <div className={Styles.topAbout}>
         <article className={Styles.aboutText}>
           <h2 className={Styles.aboutTitles}>- Vi tar hand om din bästa vän</h2>
@@ -26,6 +36,7 @@ const AboutScreen = () => {
             </p>
           </div>
         </article>
+        {/* Offers */}
         <aside className={Styles.priceList}>
           <h2 className={Styles.aboutTitles}>Våra tjänster</h2>
           <div className={Styles.ourOffers}>
@@ -51,10 +62,21 @@ const AboutScreen = () => {
           </div>
         </aside>
       </div>
+      {/* Staff */}
       <div className={Styles.bottomAbout}>
-        <article className={Styles.staffInfo}>
-          <h2 className={Styles.aboutTitles}>Vår personal</h2>
-
+        <h2 className={Styles.aboutTitles}>Vår personal</h2>
+        <article className={Styles.staffContainer}>
+          {
+            staffData.map((staff) => {
+              return <section className={Styles.staffInfo} key={staff.id}>
+                <img className={Styles.staffImg} src={dog}></img>
+                <h3>{staff.name}</h3>
+                <p>{staff.email}</p>
+                <p>{staff.desc}</p>
+              </section>
+            }
+            )
+          }
         </article>
       </div>
     </main>

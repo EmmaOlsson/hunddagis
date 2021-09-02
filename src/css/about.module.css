@@ -1,10 +1,10 @@
 .mainContainer{
-    width: 90%;
-    margin:0 auto;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .topAbout{
-    height: 100%;
+    height: fit-content;
     display: flex;
 }
 
@@ -21,11 +21,6 @@
 .priceList{
     flex: 2;
     text-align: center;
-}
-
-.bottomAbout{
-    height: 20vh;
-    margin-top: .5rem;
 }
 
 .aboutTitles, .aboutLists{
@@ -46,6 +41,33 @@ ul{
     line-height: 150%;
 }
 
+/* Staff */
+
+.bottomAbout{
+    height: fit-content;
+    margin-top: .5rem;
+}
+
+.staffContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    justify-items: stretch;
+}
+
+.staffInfo{
+    display: flex;
+    flex-direction: column;
+    background: var(--light-blue);
+    align-items: center;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: .5rem;
+
+}
+
+.staffImg{
+    width: inherit;
+}
 
 @media only screen and (max-width: 800px){
     .topAbout{
@@ -59,7 +81,5 @@ ul{
     .aboutText{
         margin-right: 0;
     }
-    
-
 
 }

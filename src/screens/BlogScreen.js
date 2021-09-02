@@ -7,9 +7,7 @@ const BlogScreen = () => {
             <div className={Styles.topAbout}>
                 <article className={Styles.blogPosts}>
                     <h2>Blogg</h2>
-                        <p>
-                            Snart hittar du de senaste inläggen och artiklarna här!
-                        </p>
+                    <p>Snart hittar du de senaste inläggen och artiklarna här!</p>
                 </article>
                 <aside className={Styles.latestPictures}>
                     <h2 className={Styles.pictureTitle}>Senaste bilderna</h2>
