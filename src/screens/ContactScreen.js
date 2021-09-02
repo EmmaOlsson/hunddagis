@@ -1,7 +1,9 @@
-import { faStickyNote } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import hunddagis from '../assets/graphics/hunddagis.jpg';
 import style from '../css/contact.module.css';
+
+import eng from '../assets/data/eng.js';
+import sv from '../assets/data/sv.js';
 
 const ContactScreen = () => {
 
