@@ -7,8 +7,13 @@ import sweden from '../assets/graphics/sweden-flag.png';
 import england from '../assets/graphics/uk-flag.png';
 import { Link } from 'react-router-dom';
 
+import { useTranslation, Trans } from 'react-i18next';
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const { t, i18n } = useTranslation();
+
   return (
     <header>
       <Link to='/' className={Styles.logoContainer}>
@@ -19,16 +24,16 @@ const Header = () => {
       <nav className={Styles.nav}>
         <ul className={Styles.navList} id={isOpen ? `${Styles.hidden}` : ''}>
           <Link to='/about' className={Styles.navListItem}>
-            Om oss
+            {t('navbar.about')}
           </Link>
           <Link to='/blog' className={Styles.navListItem}>
-            Blogg
+            {t('navbar.blog')}
           </Link>
           <Link to='/faq' className={Styles.navListItem}>
-            Vanliga Frågor
+            {t('navbar.questions')}
           </Link>
           <Link to='/contact' className={Styles.navListItem}>
-            Kontakt
+            {t('navbar.contact')}
           </Link>
         </ul>
         <div
