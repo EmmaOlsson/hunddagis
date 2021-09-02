@@ -14,6 +14,10 @@ const Header = () => {
 
   const { t, i18n } = useTranslation();
 
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
+
   return (
     <header>
       <Link to='/' className={Styles.logoContainer}>
@@ -40,8 +44,19 @@ const Header = () => {
           className={Styles.language}
           id={isOpen ? `${Styles.hiddenFlag}` : ''}
         >
-          <img className={Styles.flag} id={Styles.sweden} src={sweden} alt='' />
-          <img className={Styles.flag} src={england} alt='' />
+          <img
+            onClick={() => changeLanguage('sv')}
+            className={Styles.flag}
+            id={Styles.sweden}
+            src={sweden}
+            alt=''
+          />
+          <img
+            onClick={() => changeLanguage('en')}
+            className={Styles.flag}
+            src={england}
+            alt=''
+          />
         </div>
 
         <FontAwesomeIcon
