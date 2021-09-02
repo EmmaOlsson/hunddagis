@@ -2,10 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Styles from '../css/about.module.css';
 
 import staffFile from '../assets/data/staff';
-import dog from '../assets/graphics/dog-logo-paws.png';
-
-
-
 
 const AboutScreen = () => {
 
@@ -27,7 +23,7 @@ const AboutScreen = () => {
           <h2 className={Styles.aboutTitles}>- Vi tar hand om din bästa vän</h2>
           <div className={Styles.aboutInfo}>
             <p>
-              <span>Hundkojan hittar du på en stor familjegård bara 5 minuter från Helsingborgs centrum. Gården har stora inhängnade utomhusytor där din fyrbenta vän kan springa fritt med andra fyrbenta kompisar. Inomhusdelen renoverades under 2020 och där finns både sociala och indivduella utrymmen, allt för att din hund ska känna sig trygg.</span>
+              <span>Hundkojan är ett hunddagis som du hittar på en stor familjegård bara 5 minuter från Helsingborgs centrum. Gården har stora inhängnade utomhusytor där din fyrbenta vän kan springa fritt med andra fyrbenta kompisar. Inomhusdelen renoverades under 2020 och där finns både sociala och individuella utrymmen, allt för att din hund ska känna sig trygg.</span>
               <span>Hundkojan ser till att din vovve både får lugn och ro, aktivering, stimulans och härligt umgänge med andra hundar – så att du kan göra det du behöver göra!</span>
               <span>Du väljer själv vilken tjänst som passar dig och din hund bäst!</span>
               <span>Smulan och Bosse Hundsson grundade 1998 Hundkojan AB och har sedan dess samlat på sig väldigt många fyrbenta vänner runtom i Skåne. Verksamheten är godkänd av Länsstyrelsen.</span>
@@ -67,10 +63,10 @@ const AboutScreen = () => {
           {
             staffData.map((staff) => {
               return <section className={Styles.staffInfo} key={staff.id}>
-                <img className={Styles.staffImg} src={dog}></img>
+                <img className={Styles.staffImg} src={staff.img}></img>
                 <h3>{staff.name}</h3>
-                <p>{staff.email}</p>
                 <p>{staff.desc}</p>
+                <a href={staff.emailLink}>{staff.email}</a>
               </section>
             }
             )

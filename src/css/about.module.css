@@ -32,9 +32,10 @@
 }
 
 .aboutInfo span{
+    font-size: .9rem;
     line-height: 1.5rem;
     display: inline-block;
-    padding-top: .4rem;
+    padding-top: .5rem;
 }
 
 ul{
@@ -50,7 +51,7 @@ ul{
 
 .staffContainer{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     justify-items: stretch;
 }
 
@@ -61,12 +62,25 @@ ul{
     align-items: center;
     padding: 1.5rem;
     margin: 1rem;
-    border-radius: .5rem;
+    border-radius: .4rem;
+}
 
+.staffInfo p{
+    color: var(--black-sky);
+    padding: .1rem 0 .3rem 0;
+}
+
+.staffInfo a{
+    font-size: .8rem;
+    color: var(--black-sky)
 }
 
 .staffImg{
     width: inherit;
+    background: var(--white-blue);
+    border-radius: .3rem;
+    box-shadow: var(--sky-blue) 0px .2rem .5rem;
+    margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 800px){
@@ -76,9 +90,6 @@ ul{
 
     .aboutText{
         margin-bottom: .5rem;
-    }
-
-    .aboutText{
         margin-right: 0;
     }
 
