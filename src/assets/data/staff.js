@@ -1,10 +1,10 @@
-[
+const staffData = [
     {
         "id": 1,
         "name": "Emma",
         "email": "hej@hundkojan.se",
         "desc": "Hundälskare",
-        "img": "dog-logo-paws.jpg"
+        "img": "breed-1"
     },
     {
         "id": 2,
@@ -56,3 +56,5 @@
         "img": "dog-logo-paws.jpg"
     }
 ]
+
+export default staffData;

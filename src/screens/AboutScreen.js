@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Styles from '../css/about.module.css'
-import dog from '../assets/graphics/dog-logo-paws.png'
+import Styles from '../css/about.module.css';
+
+import staffFile from '../assets/data/staff';
+import dog from '../assets/graphics/dog-logo-paws.png';
+
 
 
 
@@ -9,13 +12,8 @@ const AboutScreen = () => {
   const [staffData, setStaffData] = useState([])
 
   useEffect(() => {
-    fetch('staff.json')
-      .then((response) => {
-        return response.json()
-      })
-      .then((data) => {
-        setStaffData(data)
-      })
+
+        setStaffData(staffFile)
 
   }, [])
 
