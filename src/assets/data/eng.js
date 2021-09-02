@@ -25,8 +25,8 @@ export default {
   faq: {
     title: 'Questions',
     subHeading:
-      'Of course, as the owner of a four-legged friend, you have many questions. Here we have collected the most common questions with answers. Should the answer to your question not be available, you are welcome to contact us here!',
-
+      'Of course, as the owner of a four-legged friend, you have many questions. Here we have collected the most common questions with answers. Should the answer to your question not be available, you are welcome to contact us',
+    link: ' here!',
     questions: [
       {
         title: 'How many dogs do you receive at the same time?',

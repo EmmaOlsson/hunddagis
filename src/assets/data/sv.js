@@ -25,8 +25,8 @@ export default {
   faq: {
     title: 'Vanliga Frågor',
     subHeading:
-      'Självklart har du som ägare av en fyrbent vän många frågor. Här har vi samlat de vanligaste frågorna med svar. Skulle svaret på din fråga inte finnas är du välkommen att kontakta oss här!',
-
+      'Självklart har du som ägare av en fyrbent vän många frågor. Här har vi samlat de vanligaste frågorna med svar. Skulle svaret på din fråga inte finnas är du välkommen att kontakta oss',
+    link: ' här!',
     questions: [
       {
         title: 'Hur många hundar tar ni emot samtidigt?',

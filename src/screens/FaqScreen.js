@@ -24,8 +24,9 @@ const FaqScreen = () => {
       <h3 className={Styles.heading}>{t('faq.title')}</h3>
       <p className={Styles.description}>
         {t('faq.subHeading')}
+        <span> </span>
         <Link to='/contact' className={Styles.contactLink}>
-          här!
+          {t('faq.link')}
         </Link>
       </p>
       {questions.map((question, index) => (
