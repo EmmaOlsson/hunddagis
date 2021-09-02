@@ -6,26 +6,25 @@ import eng from '../assets/data/eng.js';
 import sv from '../assets/data/sv.js';
 
 const ContactScreen = () => {
-
-  return(
+  return (
     <section className={style.logoContainer}>
-      
       <div className={style.contactTitle}>
         <span className={style.contactTitle}>Kontakta oss</span>
       </div>
 
       <div className={style.contactDetailsContainer}>
         <div>
-        <img className={style.img} src={hunddagis}></img>
+          <img className={style.img} src={hunddagis}></img>
         </div>
 
         <div className={style.contactDetails}>
           <div className={style.content}>
-
             <div className={style.titleContainer}>
-              <span className={style.contactDetailsTitle}>Kontaktuppgifter</span>
+              <span className={style.contactDetailsTitle}>
+                Kontaktuppgifter
+              </span>
             </div>
-            
+
             <div className={style.nameContainer}>
               <span className={style.subHeading}>Namn: </span>
               <span>Hunddagis</span>
@@ -45,14 +44,11 @@ const ContactScreen = () => {
               <span className={style.subHeading}>E-post: </span>
               <span>test@testsson.com</span>
             </div>
-
-
           </div>
-          
         </div>
       </div>
     </section>
-  )
+  );
 };
 
 export default ContactScreen;
