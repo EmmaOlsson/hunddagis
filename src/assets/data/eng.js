@@ -64,6 +64,8 @@ export default {
         fourthParagraph: "Smulan and Bosse Hundsson founded Hundkojan AB in 1998 and have since gathered many four-legged friends around Skåne. The operation is approved by the County Administrative Board.",
 
         ourServices: {
+            title: "Our services",
+
             fullTime: {
                 time: "Full time",
                 days: "4-5 days a week",
