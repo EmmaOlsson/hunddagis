@@ -1,24 +1,32 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
 import Styles from '../css/footer.module.css';
 
 const Footer = () => {
+
   return (
     <section>
         <footer className={Styles.mainFooter} >
             <div className={Styles.footerTop} >
-            <nav className={Styles.navFooter} >
-              <ul className={Styles.navFooter} >
-                <li className={Styles.navFooterItem} >Blogg</li>
-                <li className={Styles.navFooterItem} >Om oss</li>
-                <li className={Styles.navFooterItem} >Vanliga frågor</li>
-                <li className={Styles.navFooterItem} >Kontakt</li>
-              </ul>
-            </nav>
+              <ul className={Styles.footerLinks} >
+
+                <Link to='/about' className={Styles.footerLink} >Om oss</Link>
+
+                <Link to='/blog' className={Styles.footerLink} >Blogg</Link>
+
+                <Link to='/faq' className={Styles.footerLink} >Vanliga frågor</Link>
+
+                <Link to='/blog' className={Styles.footerLink} >Kontakt</Link>
+
+              </ul>       
             </div>
 
+            
             <div className={Styles.footerBottom} >
-              <p>&copy; Hundkojan AB 2021</p>
+              
+              <div className={Styles.footerLine} ></div>
+              <p className={Styles.footerCopyright} >&copy; Hundkojan AB 2021</p>
             </div>
 
         </footer>
