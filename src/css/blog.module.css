@@ -1,5 +1,5 @@
 .mainContainer{
-    width: 90%;
+    width: 100%;
     margin:0 auto;
 }
 
@@ -18,8 +18,14 @@
     margin-right: .5rem;
 }
 
+.blogPostsContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
 .latestPictures{
-    flex: 2;
+    flex: 1;
 }
 
 

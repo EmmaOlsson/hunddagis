@@ -20,10 +20,15 @@ const BlogScreen = () => {
             <div className={Styles.topAbout}>
                 <article className={Styles.blogPosts}>
                     <h2>Blogg</h2>
-                    <p>Snart hittar du de senaste inläggen och artiklarna här!</p>
+
                     {
                         blogData.map((blog) => {
-                            return <section>
+                            return <section className={Styles.blogPostsContainer}>
+                                <h3>{blog.title}</h3>
+                                <h4>{blog.article}</h4>
+                                <h5>{blog.date}</h5>
+                                <h5>{blog.category}</h5>
+                                <p>{blog.text}</p>
                                 <p>{blog.author}</p>
                             </section>
                         })
