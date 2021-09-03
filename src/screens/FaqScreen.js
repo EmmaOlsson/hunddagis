@@ -3,7 +3,6 @@ import Styles from '../css/faq.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-
 import { useTranslation } from 'react-i18next';
 
 const FaqScreen = () => {

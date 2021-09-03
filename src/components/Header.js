@@ -7,7 +7,7 @@ import sweden from '../assets/graphics/sweden-flag.png';
 import england from '../assets/graphics/uk-flag.png';
 import { Link } from 'react-router-dom';
 
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
