@@ -1,7 +1,6 @@
-import { blogPostsEng } from "./blogPosts copy"
 
 // Swedish
-[
+const blogPosts = [
     {
         "id": 1,
         "title": "Ny skötare Svenska",
@@ -69,4 +68,4 @@ import { blogPostsEng } from "./blogPosts copy"
     }
 ]
 
-export  default blogPosts;
+export default blogPosts;

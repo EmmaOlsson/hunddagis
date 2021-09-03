@@ -20,7 +20,6 @@ const BlogScreen = () => {
             <div className={Styles.topAbout}>
                 <article className={Styles.blogPosts}>
                     <h2>Blogg</h2>
-
                     {
                         blogData.map((blog) => {
                             return <section className={Styles.blogPostsContainer}>
