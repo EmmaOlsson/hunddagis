@@ -3,31 +3,35 @@ import Styles from '../css/faq.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-import faqData from '../assets/graphics/data/faqData';
+import { useTranslation } from 'react-i18next';
 
 const FaqScreen = () => {
   const [open, setOpen] = useState(null);
   const [questions, setQuestions] = useState([]);
 
+  const { t, i18n } = useTranslation();
+
   useEffect(() => {
-    setQuestions(faqData);
-  }, []);
+    const questionsFromi18n = i18n.t('faq.questions', {
+      returnObjects: true,
+    });
+    setQuestions(questionsFromi18n);
+  }, [i18n, t]);
 
   return (
     <div className={Styles.mainContainer}>
-      <h3 className={Styles.heading}>Vanliga frågor</h3>
+      <h3 className={Styles.heading}>{t('faq.title')}</h3>
       <p className={Styles.description}>
-        Självklart har du som ägare av en fyrbent vän många frågor. Här har vi
-        samlat de vanligaste frågorna med svar. Skulle svaret på din fråga inte
-        finnas är du välkommen att kontakta oss{' '}
+        {t('faq.subHeading')}
+        <span> </span>
         <Link to='/contact' className={Styles.contactLink}>
-          här!
+          {t('faq.link')}
         </Link>
       </p>
       {questions.map((question, index) => (
         <div className={Styles.questionWrapper} key={index}>
           <div className={Styles.questionContainer}>
-            <h5 className={Styles.question}>{question.question}</h5>
+            <h5 className={Styles.question}>{question.title}</h5>
             <p className={open === index && Styles.answer}>
               {open === index ? question.answer : ''}
             </p>
