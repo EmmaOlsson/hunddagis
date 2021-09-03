@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Styles from '../css/blog.module.css'
 
-import { blogPosts } from '../assets/data/blogPosts'
+import blogPosts from '../assets/data/blogPosts'
 
 const BlogScreen = () => {
 
