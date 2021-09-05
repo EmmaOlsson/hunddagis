@@ -1,62 +1,80 @@
 import React, { useState, useEffect } from 'react';
 import Styles from '../css/about.module.css';
 
-import staffFile from '../assets/data/staff';
+import { useTranslation } from 'react-i18next';
+
 
 const AboutScreen = () => {
 
+  const [aboutUsData, setAboutUsData] = useState([])
+  const [servicesData, setServicesData] = useState([])
   const [staffData, setStaffData] = useState([])
 
+
+  const { t, i18n } = useTranslation();
+
+  // About us
   useEffect(() => {
+    const aboutUsDataFromi18n = i18n.t('about.aboutUs.aboutUsData', {
+      returnObjects: true
+    })
+    setAboutUsData(aboutUsDataFromi18n)
+  }, [i18n, t])
 
-        setStaffData(staffFile)
+  // Services
+  useEffect(() => {
+    const servicesDataFromi18n = i18n.t('about.ourServices.servicesData', {
+      returnObjects: true
+    })
+    setServicesData(servicesDataFromi18n)
+  }, [i18n, t])
 
-  }, [])
+  // Staff
+  useEffect(() => {
+    const staffDataFromi18n = i18n.t('about.ourStaff.staffData', {
+      returnObjects: true
+    })
+    setStaffData(staffDataFromi18n)
+  }, [i18n, t])
+
 
   return <section>
     <main className={Styles.mainContainer}>
       {/* About */}
       <div className={Styles.topAbout}>
         <article className={Styles.aboutText}>
-          <h2 className={Styles.aboutTitles}>- Vi tar hand om din bästa vän</h2>
-          <div className={Styles.aboutInfo}>
-            <p>
-              <span>Hundkojan är ett hunddagis som du hittar på en stor familjegård bara 5 minuter från Helsingborgs centrum. Gården har stora inhängnade utomhusytor där din fyrbenta vän kan springa fritt med andra fyrbenta kompisar. Inomhusdelen renoverades under 2020 och där finns både sociala och individuella utrymmen, allt för att din hund ska känna sig trygg.</span>
-              <span>Hundkojan ser till att din vovve både får lugn och ro, aktivering, stimulans och härligt umgänge med andra hundar – så att du kan göra det du behöver göra!</span>
-              <span>Du väljer själv vilken tjänst som passar dig och din hund bäst!</span>
-              <span>Smulan och Bosse Hundsson grundade 1998 Hundkojan AB och har sedan dess samlat på sig väldigt många fyrbenta vänner runtom i Skåne. Verksamheten är godkänd av Länsstyrelsen.</span>
-            </p>
-          </div>
+          <h2 className={Styles.aboutTitles}>{t('about.aboutUs.title')}</h2>
+          {
+            aboutUsData.map((aboutUs) => {
+              return <section className={Styles.aboutInfo} key={aboutUs.id}>
+                <p>
+                  <span>{aboutUs.text}</span>
+                </p>
+              </section>
+            })
+          }
         </article>
-        {/* Offers */}
-        <aside className={Styles.priceList}>
-          <h2 className={Styles.aboutTitles}>Våra tjänster</h2>
-          <div className={Styles.ourOffers}>
-            <h3>Heltid</h3>
-            <ul className={Styles.aboutLists}>
-              <li>4 till 5 dagar i veckan</li>
-              <li>2990 kr i månaden</li>
-            </ul>
-          </div>
-          <div className={Styles.ourOffers}>
-            <h3>Deltid</h3>
-            <ul className={Styles.aboutLists}>
-              <li>2 till 3 dagar i veckan</li>
-              <li>2290 kr i månaden</li>
-            </ul>
-          </div>
-          <div className={Styles.ourOffers}>
-            <h3>Flex</h3>
-            <ul className={Styles.aboutLists}>
-              <li>I mån av plats </li>
-              <li>350 kr för en dag</li>
-            </ul>
-          </div>
+        {/* Services */}
+        <aside className={Styles.servicesContainer}>
+          <h2 className={Styles.aboutTitles}>{t('about.ourServices.title')}</h2>
+          {
+            servicesData.map((services) => {
+              return <section className={Styles.priceList} key={services.id}>
+                <div className={Styles.ourOffers}>
+                  <h3>{services.type}</h3>
+                  <ul className={Styles.offerList}>
+                    <li>{services.days}</li>
+                    <li>{services.price}</li>
+                  </ul>
+                </div>
+              </section>
+            })
+          }
         </aside>
       </div>
       {/* Staff */}
       <div className={Styles.bottomAbout}>
-        <h2 className={Styles.aboutTitles}>Vår personal</h2>
+        <h2 className={Styles.aboutTitles}>{t('about.ourStaff.title')}</h2>
         <article className={Styles.staffContainer}>
           {
             staffData.map((staff) => {

@@ -9,7 +9,7 @@
     display: flex;
 }
 
-.aboutText, .priceList, .bottomAbout{
+.aboutText, .servicesContainer, .bottomAbout{
     background: var(--white-blue);
     padding: 2rem;
 }
@@ -19,12 +19,16 @@
     margin-right: .5rem;
 }
 
-.priceList{
+.servicesContainer{
     flex: 2;
     text-align: center;
 }
 
-.aboutTitles, .aboutLists{
+.priceList{
+    justify-content: center;
+}
+
+.aboutTitles, .offerList{
     margin-bottom: 1rem;
 }
 
@@ -39,7 +43,7 @@
     padding-top: .5rem;
 }
 
-ul{
+.offerList{
     line-height: 150%;
 }
 

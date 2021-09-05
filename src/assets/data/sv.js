@@ -1,3 +1,8 @@
+
+import { servicesSwe } from './servicesData'
+import { staffDataSwe } from './staffData';
+import { aboutUsDataSwe } from './aboutUsData';
+
 export default {
   navbar: {
     about: 'Om oss',
@@ -56,41 +61,20 @@ export default {
   },
 
   about: {
-    title: '- Vi tar hand om din bästa vän',
-
-    firstParagraph:
-      'Hundkojan hittar du på en stor familjegård bara 5 minuter från Helsingborgs centrum. Gården har stora inhängnade utomhusytor där din fyrbenta vän kan springa fritt med andra fyrbenta kompisar. Inomhusdelen renoverades under 2020 och där finns både sociala och indivduella utrymmen, allt för att din hund ska känna sig trygg.',
-
-    secondParagraph:
-      'Hundkojan ser till att din vovve både får lugn och ro, aktivering, stimulans och härligt umgänge med andra hundar – så att du kan göra det du behöver göra!',
-
-    thirdParagraph:
-      'Du väljer själv vilken tjänst som passar dig och din hund bäst!',
-
-    fourthParagraph:
-      'Smulan och Bosse Hundsson grundade 1998 Hundkojan AB och har sedan dess samlat på sig väldigt många fyrbenta vänner runtom i Skåne. Verksamheten är godkänd av Länsstyrelsen.',
+    aboutUs: {
+      title: '- Vi tar hand om din bästa vän!',
+      aboutUsData: aboutUsDataSwe
+    },
 
     ourServices: {
       title: 'Våra tjänster',
-
-      fullTime: {
-        time: 'Heltid',
-        days: '4-5 dagar i veckan',
-        price: '2990kr i månaden',
-      },
-      partTime: {
-        time: 'Deltid',
-        days: '2-3 dagar i veckan',
-        price: '2290kr i månaden',
-      },
-      flex: {
-        time: 'Flex',
-        price: '350kr för en dag',
-      },
+      servicesData: servicesSwe
+      
     },
 
     ourStaff: {
       title: 'Vår personal',
+      staffData: staffDataSwe
     },
   },
 

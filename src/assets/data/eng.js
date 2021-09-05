@@ -1,3 +1,7 @@
+import { staffDataEng } from './staffData'
+import { servicesEng } from './servicesData'
+import { aboutUsDataEng } from './aboutUsData'
+
 export default {
   navbar: {
     about: 'About',
@@ -56,40 +60,19 @@ export default {
   },
 
   about: {
-    title: '- We take care of your best friend',
-
-    firstParagraph:
-      'You will find the kennel on a large family farm just 5 minutes from the center of Helsingborg. The yard has large fenced outdoor areas where your four-legged friend can run free with other four-legged friends. The indoor part was renovated in 2020 and there are both social and individual spaces, all to make your dog feel safe.',
-
-    secondParagraph:
-      'Hundkojan ser till att din vovve både får lugn och ro, aktivering, stimulans och härligt umgänge med andra hundar – så att du kan göra det du behöver göra!',
-
-    thirdParagraph: 'You choose which service suits you and your dog best!',
-
-    fourthParagraph:
-      'Smulan and Bosse Hundsson founded Hundkojan AB in 1998 and have since gathered many four-legged friends around Skåne. The operation is approved by the County Administrative Board.',
+    aboutUs: {
+      title: '- We take care of your best friend!',
+      aboutUsData: aboutUsDataEng
+    },
 
     ourServices: {
       title: 'Our services',
-
-      fullTime: {
-        time: 'Full time',
-        days: '4-5 days a week',
-        price: '2,990 SEK a month',
-      },
-      partTime: {
-        time: 'Part time',
-        days: '2-3 days a week',
-        price: '2,290 SEK a month',
-      },
-      flex: {
-        time: 'Flexible time',
-        price: '350 SEK for a day',
-      },
+      servicesData: servicesEng
     },
 
     ourStaff: {
       title: 'Our staff',
+      staffData: staffDataEng
     },
   },
 
@@ -101,5 +84,5 @@ export default {
     Pictures: {
       title: 'Latest pictures',
     },
-}
+  }
 }
