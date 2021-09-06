@@ -35,7 +35,7 @@ const BlogScreen = () => {
           Visa endast artiklar
         </button>
         <button onClick={() => showNews(posts)}>Visa endast nyheter</button>
-        <button>Visa alla</button>
+        <button onClick={() => setFilteredPosts(posts)}>Visa alla</button>
         <button>Sortera nyast först</button>
         <button>Sortera äldst först</button>
         <div className={Styles.topAbout}>
