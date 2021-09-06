@@ -12,22 +12,6 @@ const BlogScreen = () => {
     setFilteredPosts(blogPosts);
   }, []);
 
-  const showArticles = (posts) => {
-    const articles = posts.filter(
-      (post) => post.category === ('article' || 'artikel')
-    );
-    console.log(articles);
-    setFilteredPosts(articles);
-  };
-
-  const showNews = (posts) => {
-    const articles = posts.filter(
-      (post) => post.category === ('news' || 'nyhet')
-    );
-    console.log(articles);
-    setFilteredPosts(articles);
-  };
-
   const latestFirst = (posts) => {
     const sortedPosts = [...posts].sort(function (a, b) {
       var aDate = new Date(a.date);
@@ -52,20 +36,40 @@ const BlogScreen = () => {
     setFilteredPosts(sortedPosts);
   };
 
+  const handleFilter = (value) => {
+    switch (value) {
+      case 'all':
+        setFilteredPosts(posts);
+        break;
+      case 'news':
+        const news = posts.filter(
+          (post) => post.category === ('news' || 'nyhet')
+        );
+        setFilteredPosts(news);
+        break;
+      case 'articles':
+        const articles = posts.filter(
+          (post) => post.category === ('article' || 'artikel')
+        );
+        setFilteredPosts(articles);
+    }
+  };
+
   return (
     <section>
       <main className={Styles.mainContainer}>
-        <button onClick={() => showArticles(posts)}>
-          Visa endast artiklar
-        </button>
-        <button onClick={() => showNews(posts)}>Visa endast nyheter</button>
-        <button onClick={() => setFilteredPosts(posts)}>Visa alla</button>
         <button onClick={() => latestFirst(filteredPosts)}>
           Sortera nyast först
         </button>
         <button onClick={() => oldestFirst(filteredPosts)}>
           Sortera äldst först
         </button>
+        <label for='cars'>Filtrera:</label>
+        <select id='filter' onChange={(e) => handleFilter(e.target.value)}>
+          <option value='all'>Visa alla</option>
+          <option value='news'>Nyheter</option>
+          <option value='articles'>Artiklar</option>
+        </select>
         <div className={Styles.topAbout}>
           <article className={Styles.blogPosts}>
             <h2>Blogg</h2>
@@ -82,9 +86,6 @@ const BlogScreen = () => {
               );
             })}
           </article>
-          <aside className={Styles.latestPictures}>
-            <h2 className={Styles.pictureTitle}>Senaste bilderna</h2>
-          </aside>
         </div>
       </main>
     </section>
