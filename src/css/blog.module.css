@@ -3,31 +3,60 @@
     margin:0 auto;
 }
 
-.topAbout{
-    height: 100%;
-    display: flex;
-}
-
-.blogPosts, .latestPictures{
+.blogPosts {
     background: var(--white-blue);
     padding: 2rem;
 }
 
-.blogPosts{
-    flex: 3;
-    margin-right: .5rem;
-}
-
-.blogPostsContainer {
+.blogPostContent{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 2rem 0;
+    padding: 2rem 3rem;
+    background: var(--white-regular);
+    margin: 1rem 0;
+    line-height: 1.5rem;
+    border-radius: .4rem;
 }
 
-.latestPictures{
-    flex: 1;
+.blogPostTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--black-sky);
 }
 
+.blogTitle{
+    font-weight: 400;
+}
+
+.blogCategory{
+    font-style: italic;
+    background: var(--white-blue);
+    width: fit-content;
+    padding: .1rem 1rem;
+    font-weight: 400;
+}
+
+.blogText {
+    padding: 1rem 3rem .2rem 1rem;
+    font-size: .9rem;
+}
+
+
+
+.blogPostBottom {
+    color: var(--hundkojan-blue);
+    font-size: .8rem;
+    line-height: 1rem;
+    text-transform: capitalize;
+    text-align: end;
+    padding-right: 1rem;
+}
+
+
+
+/* Anpassad */
 
 @media only screen and (max-width: 800px){
     .topAbout{
