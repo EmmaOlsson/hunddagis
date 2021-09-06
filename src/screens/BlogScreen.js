@@ -64,23 +64,27 @@ const BlogScreen = () => {
                     <option value='latest'>Nyast först</option>
                     <option value='oldest'>Äldst först</option>
                 </select>
-                <div className={Styles.topAbout}>
-                    <article className={Styles.blogPosts}>
-                        <h2>{t('blog.title')}</h2>
-                        {filteredPosts.map((post) => {
-                            return (
-                                <section key={post.id} className={Styles.blogPostsContainer}>
-                                    <h3>{post.title}</h3>
-                                    <h4>{post.article}</h4>
-                                    <h5>{post.date}</h5>
-                                    <h5>{post.category}</h5>
-                                    <p>{post.text}</p>
-                                    <p>{post.author}</p>
-                                </section>
-                            );
-                        })}
-                    </article>
-                </div>
+                <article className={Styles.blogPosts}>
+                    <h2>{t('blog.title')}</h2>
+                    {filteredPosts.map((post) => {
+                        return (
+                            <section key={post.id} className={Styles.blogPostContent}>
+                                <div className={Styles.blogPostTop}>
+                                    <h3 className={Styles.blogTitle}>{post.title}</h3>
+                                    <h5 className={Styles.blogCategory}>{post.category}</h5>
+                                </div>
+                                {/*                                     <h4 className={Styles.blogCategory}>{post.article}</h4>
+ */}                                    
+                                <p className={Styles.blogText}>{post.text}</p>
+                                <div className={Styles.blogPostBottom}>
+                                <p className={Styles.blogAuthor}>{t('blog.publishedText')} {post.author}</p>
+                                <p className={Styles.blogDate}>{post.date}</p>
+                                </div>
+
+                            </section>
+                        );
+                    })}
+                </article>
             </main>
         </section>
     );
