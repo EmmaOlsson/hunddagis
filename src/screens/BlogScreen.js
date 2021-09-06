@@ -12,30 +12,6 @@ const BlogScreen = () => {
     setFilteredPosts(blogPosts);
   }, []);
 
-  const latestFirst = (posts) => {
-    const sortedPosts = [...posts].sort(function (a, b) {
-      var aDate = new Date(a.date);
-      var bDate = new Date(b.date);
-      return bDate - aDate;
-    });
-
-    console.log(sortedPosts);
-
-    setFilteredPosts(sortedPosts);
-  };
-
-  const oldestFirst = (posts) => {
-    const sortedPosts = [...posts].sort(function (a, b) {
-      var aDate = new Date(a.date);
-      var bDate = new Date(b.date);
-      return aDate - bDate;
-    });
-
-    console.log(sortedPosts);
-
-    setFilteredPosts(sortedPosts);
-  };
-
   const handleFilter = (value) => {
     switch (value) {
       case 'all':
