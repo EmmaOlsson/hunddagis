@@ -7,7 +7,8 @@ import breedSix from '../graphics/breed-6.png'
 import breedSeven from '../graphics/breed-7.png'
 import breedEight from '../graphics/breed-8.png'
 
-const staffData = [
+// Swedish
+export const staffDataSwe = [
     {
         "id": 1,
         "name": "Smulan",
@@ -29,7 +30,7 @@ const staffData = [
         "name": "Emma",
         "email": "emma@hundkojan.se",
         "emailLink": "mailto:emma@hundkojan.se",
-        "desc": "Skötare",
+        "desc": "Hundskötare",
         "img": breedThree
     },
     {
@@ -37,7 +38,7 @@ const staffData = [
         "name": "Elin",
         "email": "elin@hundkojan.se",
         "emailLink": "mailto:elin@hundkojan.se",
-        "desc": "Skötare",
+        "desc": "Hundskötare",
         "img": breedFour
     },
     {
@@ -45,7 +46,7 @@ const staffData = [
         "name": "Nina",
         "email": "nina@hundkojan.se",
         "emailLink": "mailto:nina@hundkojan.se",
-        "desc": "Skötare",
+        "desc": "Hundskötare",
         "img": breedFive
     },
     {
@@ -53,7 +54,7 @@ const staffData = [
         "name": "Julia",
         "email": "julia@hundkojan.se",
         "emailLink": "mailto:julia@hundkojan.se",
-        "desc": "Skötare",
+        "desc": "Hundskötare",
         "img": breedSix
     },
     {
@@ -61,7 +62,7 @@ const staffData = [
         "name": "Frida",
         "email": "frida@hundkojan.se",
         "emailLink": "mailto:frida@hundkojan.se",
-        "desc": "Skötare",
+        "desc": "Hundskötare",
         "img": breedSeven
     },
     {
@@ -74,4 +75,70 @@ const staffData = [
     }
 ]
 
-export default staffData;
+// English
+export const staffDataEng = [
+    {
+        "id": 1,
+        "name": "Smulan",
+        "email": "smulan@hundkojan.se",
+        "emailLink": "mailto:smulan@hundkojan.se",
+        "desc": "Founder",
+        "img": breedOne
+    },
+    {
+        "id": 2,
+        "name": "Bosse",
+        "email": "bosse@hundkojan.se",
+        "emailLink": "mailto:bosse@hundkojan.se",
+        "desc": "Founder",
+        "img": breedTwo
+    },
+    {
+        "id": 3,
+        "name": "Emma",
+        "email": "emma@hundkojan.se",
+        "emailLink": "mailto:emma@hundkojan.se",
+        "desc": "Care taker",
+        "img": breedThree
+    },
+    {
+        "id": 4,
+        "name": "Elin",
+        "email": "elin@hundkojan.se",
+        "emailLink": "mailto:elin@hundkojan.se",
+        "desc": "Care taker",
+        "img": breedFour
+    },
+    {
+        "id": 5,
+        "name": "Nina",
+        "email": "nina@hundkojan.se",
+        "emailLink": "mailto:nina@hundkojan.se",
+        "desc": "Care taker",
+        "img": breedFive
+    },
+    {
+        "id": 6,
+        "name": "Julia",
+        "email": "julia@hundkojan.se",
+        "emailLink": "mailto:julia@hundkojan.se",
+        "desc": "Care taker",
+        "img": breedSix
+    },
+    {
+        "id": 7,
+        "name": "Frida",
+        "email": "frida@hundkojan.se",
+        "emailLink": "mailto:frida@hundkojan.se",
+        "desc": "Care taker",
+        "img": breedSeven
+    },
+    {
+        "id": 8,
+        "name": "Brandon",
+        "email": "brandon@hundkojan.se",
+        "emailLink": "mailto:brandon@hundkojan.se",
+        "desc": "Dog trainer",
+        "img": breedEight
+    }
+]

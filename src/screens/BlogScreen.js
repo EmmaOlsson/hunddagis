@@ -3,12 +3,16 @@ import Styles from '../css/blog.module.css'
 
 import blogPosts from '../assets/data/blogPosts'
 
+import { useTranslation } from 'react-i18next';
+
 const BlogScreen = () => {
 
     const [blogData, setBlogData] = useState([])
 
+    const { t, i18n } = useTranslation();
+
     useEffect(() => {
-  
+
           setBlogData(blogPosts)
   
     }, [])
