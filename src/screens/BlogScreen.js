@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Styles from '../css/blog.module.css'
 
-import blogPosts from '../assets/data/blogPosts'
-
 import { useTranslation } from 'react-i18next';
 
 const BlogScreen = () => {
@@ -12,21 +10,22 @@ const BlogScreen = () => {
     const { t, i18n } = useTranslation();
 
     useEffect(() => {
+        const blogDataFromi18n = i18n.t('blog.blogPostData', {
+            returnObjects: true
+        })
+          setBlogData(blogDataFromi18n)
+    }, [i18n, t])
 
-          setBlogData(blogPosts)
-  
-    }, [])
-
-    console.log('blogdata', blogData)
+    console.log('blogData', blogData)
 
     return <section>
         <main className={Styles.mainContainer}>
             <div className={Styles.topAbout}>
                 <article className={Styles.blogPosts}>
-                    <h2>Blogg</h2>
+                    <h2>{t('blog.title')}</h2>
                     {
                         blogData.map((blog) => {
-                            return <section className={Styles.blogPostsContainer}>
+                            return <section className={Styles.blogPostsContainer} key={blog.id}>
                                 <h3>{blog.title}</h3>
                                 <h4>{blog.article}</h4>
                                 <h5>{blog.date}</h5>

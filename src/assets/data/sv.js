@@ -2,6 +2,7 @@
 import { servicesSwe } from './servicesData'
 import { staffDataSwe } from './staffData';
 import { aboutUsDataSwe } from './aboutUsData';
+import { blogPostsSwe } from './blogPostData';
 
 export default {
   navbar: {
@@ -79,12 +80,7 @@ export default {
   },
 
   blog: {
-    postsArticle: {
-      title: 'Blogg',
-    },
-
-    Pictures: {
-      title: 'Senaste bilderna',
-    },
+    title: 'Blog post',
+    blogPostData: blogPostsSwe
   },
-};
+}
