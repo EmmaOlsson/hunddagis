@@ -28,6 +28,30 @@ const BlogScreen = () => {
     setFilteredPosts(articles);
   };
 
+  const latestFirst = (posts) => {
+    const sortedPosts = [...posts].sort(function (a, b) {
+      var aDate = new Date(a.date);
+      var bDate = new Date(b.date);
+      return bDate - aDate;
+    });
+
+    console.log(sortedPosts);
+
+    setFilteredPosts(sortedPosts);
+  };
+
+  const oldestFirst = (posts) => {
+    const sortedPosts = [...posts].sort(function (a, b) {
+      var aDate = new Date(a.date);
+      var bDate = new Date(b.date);
+      return aDate - bDate;
+    });
+
+    console.log(sortedPosts);
+
+    setFilteredPosts(sortedPosts);
+  };
+
   return (
     <section>
       <main className={Styles.mainContainer}>
@@ -36,8 +60,12 @@ const BlogScreen = () => {
         </button>
         <button onClick={() => showNews(posts)}>Visa endast nyheter</button>
         <button onClick={() => setFilteredPosts(posts)}>Visa alla</button>
-        <button>Sortera nyast först</button>
-        <button>Sortera äldst först</button>
+        <button onClick={() => latestFirst(filteredPosts)}>
+          Sortera nyast först
+        </button>
+        <button onClick={() => oldestFirst(filteredPosts)}>
+          Sortera äldst först
+        </button>
         <div className={Styles.topAbout}>
           <article className={Styles.blogPosts}>
             <h2>Blogg</h2>
