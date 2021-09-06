@@ -3,6 +3,7 @@ import { servicesEng } from './servicesData'
 import { aboutUsDataEng } from './aboutUsData'
 import { blogPostsEng } from './blogPostData'
 
+
 export default {
   navbar: {
     about: 'About',
@@ -13,6 +14,10 @@ export default {
 
   startPage: {
     title: 'Welcome to Hundkojans Hunddagis',
+    ourServices: {
+      title: 'Our services',
+      servicesData: servicesEng,
+    }
   },
 
   contact: {

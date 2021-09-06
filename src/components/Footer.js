@@ -9,7 +9,7 @@ const Footer = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <section>
+    <section className={ Styles.footerContainer } >
         <footer className={Styles.mainFooter} >
             <div className={Styles.footerTop} >
               <ul className={Styles.footerLinks} >
@@ -27,7 +27,7 @@ const Footer = () => {
 
             
             <div className={Styles.footerBottom} >
-              
+              <h2 className={Styles.footerText} >Hundkojan</h2>
               <div className={Styles.footerLine} ></div>
               <p className={Styles.footerCopyright} >&copy; Hundkojan AB 2021</p>
             </div>
