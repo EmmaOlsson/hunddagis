@@ -14,7 +14,7 @@
     flex-direction: column;
     padding: 2rem 3rem;
     background: var(--white-regular);
-    margin: 1rem 0;
+    margin: 1.2rem 0;
     line-height: 1.5rem;
     border-radius: .4rem;
 }
@@ -27,7 +27,7 @@
 }
 
 .blogTitle{
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .blogCategory{
@@ -39,17 +39,14 @@
 }
 
 .blogText {
-    padding: 1rem 3rem .2rem 1rem;
+    padding: 1.2rem 0;
     font-size: .9rem;
 }
-
-
 
 .blogPostBottom {
     color: var(--hundkojan-blue);
     font-size: .8rem;
     line-height: 1rem;
-    text-transform: capitalize;
     text-align: end;
     padding-right: 1rem;
 }
