@@ -98,7 +98,7 @@ export const staffDataEng = [
         "name": "Emma",
         "email": "emma@hundkojan.se",
         "emailLink": "mailto:emma@hundkojan.se",
-        "desc": "Hundskötare",
+        "desc": "Care taker",
         "img": breedThree
     },
     {
@@ -106,7 +106,7 @@ export const staffDataEng = [
         "name": "Elin",
         "email": "elin@hundkojan.se",
         "emailLink": "mailto:elin@hundkojan.se",
-        "desc": "Hundskötare",
+        "desc": "Care taker",
         "img": breedFour
     },
     {
@@ -114,7 +114,7 @@ export const staffDataEng = [
         "name": "Nina",
         "email": "nina@hundkojan.se",
         "emailLink": "mailto:nina@hundkojan.se",
-        "desc": "Hundskötare",
+        "desc": "Care taker",
         "img": breedFive
     },
     {
@@ -122,7 +122,7 @@ export const staffDataEng = [
         "name": "Julia",
         "email": "julia@hundkojan.se",
         "emailLink": "mailto:julia@hundkojan.se",
-        "desc": "Hundskötare",
+        "desc": "Care taker",
         "img": breedSix
     },
     {
@@ -130,7 +130,7 @@ export const staffDataEng = [
         "name": "Frida",
         "email": "frida@hundkojan.se",
         "emailLink": "mailto:frida@hundkojan.se",
-        "desc": "Hundskötare",
+        "desc": "Care taker",
         "img": breedSeven
     },
     {
@@ -138,7 +138,7 @@ export const staffDataEng = [
         "name": "Brandon",
         "email": "brandon@hundkojan.se",
         "emailLink": "mailto:brandon@hundkojan.se",
-        "desc": "Hundinstruktör",
+        "desc": "Dog trainer",
         "img": breedEight
     }
 ]

@@ -27,7 +27,7 @@ export const aboutUsDataEng = [
     },
     {
         "id": 2,
-        "text": "Hundkojan ser till att din vovve både får lugn och ro, aktivering, stimulans och härligt umgänge med andra hundar – så att du kan göra det du behöver göra!"
+        "text": "Hundkojan ensures that your dog gets peace and quiet, activation, stimulation and wonderful company with other dogs - so you can do what you need to do!"
     },
     {
         "id": 3,

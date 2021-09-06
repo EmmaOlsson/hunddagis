@@ -79,7 +79,7 @@ const AboutScreen = () => {
           {
             staffData.map((staff) => {
               return <section className={Styles.staffInfo} key={staff.id}>
-                <img className={Styles.staffImg} src={staff.img}></img>
+                <img className={Styles.staffImg} src={staff.img} alt={'staff'}></img>
                 <h3>{staff.name}</h3>
                 <p>{staff.desc}</p>
                 <a href={staff.emailLink}>{staff.email}</a>
