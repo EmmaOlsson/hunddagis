@@ -20,13 +20,21 @@ const BlogScreen = () => {
     setFilteredPosts(articles);
   };
 
+  const showNews = (posts) => {
+    const articles = posts.filter(
+      (post) => post.category === ('news' || 'nyhet')
+    );
+    console.log(articles);
+    setFilteredPosts(articles);
+  };
+
   return (
     <section>
       <main className={Styles.mainContainer}>
         <button onClick={() => showArticles(posts)}>
           Visa endast artiklar
         </button>
-        <button>Visa endast nyheter</button>
+        <button onClick={() => showNews(posts)}>Visa endast nyheter</button>
         <button>Visa alla</button>
         <button>Sortera nyast först</button>
         <button>Sortera äldst först</button>
@@ -35,7 +43,7 @@ const BlogScreen = () => {
             <h2>Blogg</h2>
             {filteredPosts.map((post) => {
               return (
-                <section className={Styles.blogPostsContainer}>
+                <section key={post.id} className={Styles.blogPostsContainer}>
                   <h3>{post.title}</h3>
                   <h4>{post.article}</h4>
                   <h5>{post.date}</h5>
