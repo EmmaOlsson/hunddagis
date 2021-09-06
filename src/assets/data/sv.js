@@ -1,3 +1,5 @@
+import { servicesSwe } from "./servicesData";
+
 export default {
   navbar: {
     about: 'Om oss',
@@ -8,6 +10,10 @@ export default {
 
   startPage: {
     title: 'Välkommen till Hundkojans hunddagis',
+    ourServices: {
+      title: 'Våra tjänster',
+      servicesData: servicesSwe,
+    }
   },
 
   contact: {

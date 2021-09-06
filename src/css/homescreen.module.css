@@ -25,6 +25,7 @@
     flex-direction: row;
     padding: 3rem 8rem 4rem 3rem;
     position: absolute;
+/*     bottom: 4.5rem; */
 } 
 
 .infoBox {
@@ -77,4 +78,27 @@
 
 .applicationButton:hover {
     opacity: 80%;
+}
+
+.bottomSection {
+    border: blueviolet 2px solid;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+/*     padding: 3rem 8rem 4rem 3rem;
+    position: absolute; */
+}
+
+.servicesContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.priceInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid orange;
 }

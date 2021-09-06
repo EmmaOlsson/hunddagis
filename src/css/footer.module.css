@@ -1,12 +1,18 @@
 
+.footerContainer{
+    width: 100%;
+    background-color: var(--white-blue);
+    margin-top: 0.5rem;
+}
+
 .mainFooter {
+    color: var(--black-sky);
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 20rem;
-/*     height: 100%; */
-    background-color: var(--white-blue);
+    width: 90%;
+    height: 100%;
     margin: 0 auto;
+/*     padding-top: 2rem; */
 }
 
 .footerLinks {
@@ -23,21 +29,23 @@
 
 .footerTop {
     display: flex;
-    width: 90%;
     margin: 0 auto;
-    margin-top: 2rem;
+    margin: 2rem 0 2rem 0;
 }
 
+.footerText {
+    color: var(--hundkojan-blue);
+    margin-bottom: .5rem;
+}
 
 .footerLine {
     width: 100%;
-    height: 100%;
-    border-bottom: .05rem solid black;
+    border-bottom: .05rem solid var(--hundkojan-blue);
 }
 
 .footerCopyright {
     display: flex;
-    width: 90%;
     margin: 0 auto;
-    margin-top: 2rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
 }
