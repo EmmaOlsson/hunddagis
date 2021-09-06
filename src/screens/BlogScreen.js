@@ -74,11 +74,11 @@ const BlogScreen = () => {
                                     <h5 className={Styles.blogCategory}>{post.category}</h5>
                                 </div>
                                 {/*                                     <h4 className={Styles.blogCategory}>{post.article}</h4>
- */}                                    
+ */}
                                 <p className={Styles.blogText}>{post.text}</p>
                                 <div className={Styles.blogPostBottom}>
-                                <p className={Styles.blogAuthor}>{t('blog.publishedText')} {post.author}</p>
-                                <p className={Styles.blogDate}>{post.date}</p>
+                                    <p className={Styles.blogAuthor}>{t('blog.publishedText')} {post.author}</p>
+                                    <p className={Styles.blogDate}>{post.date}</p>
                                 </div>
 
                             </section>
