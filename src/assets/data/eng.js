@@ -1,6 +1,7 @@
 import { staffDataEng } from './staffData'
 import { servicesEng } from './servicesData'
 import { aboutUsDataEng } from './aboutUsData'
+import { blogPostsEng } from './blogPostData'
 
 export default {
   navbar: {
@@ -84,12 +85,7 @@ export default {
   },
 
   blog: {
-    postsArticle: {
-      title: 'Blog',
-    },
-
-    Pictures: {
-      title: 'Latest pictures',
-    },
+    title: 'Blog post',
+    blogPostData: blogPostsEng
   }
 }

@@ -1,10 +1,11 @@
+
 // Swedish
 export const blogPostsSwe = [
     {
         "id": 1,
         "title": "Ny skötare Svenska",
         "date": "2021-08-17",
-        "category": "news",
+        "category": "nyheter",
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iusto earum aliquam ut nobis? Earum, veritatis ad error omnis repellendus fugiat eaque at quasi dolorum suscipit unde, mollitia, modi laudantiumAspernatur, non quasi saepe eius fugit a ducimus ad? Quidem ea ex praesentium eos ipsam voluptas iste porro. Aliquid itaque repellat blanditiis enim facilis doloribus possimus veniam, mollitia obcaecati illum!",
         "author": "Emma"
     },
@@ -12,7 +13,7 @@ export const blogPostsSwe = [
         "id": 2,
         "title": "Utbildning",
         "date": "2021-08-19",
-        "category": "news",
+        "category": "nyheter",
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iusto earum aliquam ut nobis? Earum, veritatis ad error omnis repellendus fugiat eaque at quasi dolorum suscipit unde, mollitia, modi laudantiumAspernatur, non quasi saepe eius fugit a ducimus ad? Quidem ea ex praesentium eos ipsam voluptas iste porro. Aliquid itaque repellat blanditiis enim facilis doloribus possimus veniam, mollitia obcaecati illum!",
         "author": "Elin"
     },
@@ -20,7 +21,7 @@ export const blogPostsSwe = [
         "id": 3,
         "title": "Forskning om hundmat",
         "date": "2021-08-20",
-        "category": "article",
+        "category": "artikel",
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iusto earum aliquam ut nobis? Earum, veritatis ad error omnis repellendus fugiat eaque at quasi dolorum suscipit unde, mollitia, modi laudantiumAspernatur, non quasi saepe eius fugit a ducimus ad? Quidem ea ex praesentium eos ipsam voluptas iste porro. Aliquid itaque repellat blanditiis enim facilis doloribus possimus veniam, mollitia obcaecati illum!",
         "author": "Julia"
     },
@@ -28,7 +29,7 @@ export const blogPostsSwe = [
         "id": 4,
         "title": "Uppdatering restriktioner",
         "date": "2021-08-23",
-        "category": "news",
+        "category": "nyheter",
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iusto earum aliquam ut nobis? Earum, veritatis ad error omnis repellendus fugiat eaque at quasi dolorum suscipit unde, mollitia, modi laudantiumAspernatur, non quasi saepe eius fugit a ducimus ad? Quidem ea ex praesentium eos ipsam voluptas iste porro. Aliquid itaque repellat blanditiis enim facilis doloribus possimus veniam, mollitia obcaecati illum!",
         "author": "Nina"
 
@@ -37,7 +38,7 @@ export const blogPostsSwe = [
         "id": 5,
         "title": "Så får du din hund gladare!",
         "date": "2021-08-27",
-        "category": "article",
+        "category": "artikel",
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iusto earum aliquam ut nobis? Earum, veritatis ad error omnis repellendus fugiat eaque at quasi dolorum suscipit unde, mollitia, modi laudantiumAspernatur, non quasi saepe eius fugit a ducimus ad? Quidem ea ex praesentium eos ipsam voluptas iste porro. Aliquid itaque repellat blanditiis enim facilis doloribus possimus veniam, mollitia obcaecati illum!",
         "author": "Julia"
     },
@@ -45,7 +46,7 @@ export const blogPostsSwe = [
         "id": 6,
         "title": "Ny matleverantör",
         "date": "2021-08-29",
-        "category": "news",
+        "category": "nyheter",
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iusto earum aliquam ut nobis? Earum, veritatis ad error omnis repellendus fugiat eaque at quasi dolorum suscipit unde, mollitia, modi laudantiumAspernatur, non quasi saepe eius fugit a ducimus ad? Quidem ea ex praesentium eos ipsam voluptas iste porro. Aliquid itaque repellat blanditiis enim facilis doloribus possimus veniam, mollitia obcaecati illum!",
         "author": "Elin"
     },
@@ -53,7 +54,7 @@ export const blogPostsSwe = [
         "id": 7,
         "title": "Hundpsykologen har ordet",
         "date": "2021-09-01",
-        "category": "article",
+        "category": "artikel",
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iusto earum aliquam ut nobis? Earum, veritatis ad error omnis repellendus fugiat eaque at quasi dolorum suscipit unde, mollitia, modi laudantiumAspernatur, non quasi saepe eius fugit a ducimus ad? Quidem ea ex praesentium eos ipsam voluptas iste porro. Aliquid itaque repellat blanditiis enim facilis doloribus possimus veniam, mollitia obcaecati illum!",
         "author": "Nina"
     },
@@ -61,7 +62,7 @@ export const blogPostsSwe = [
         "id": 8,
         "title": "Ensamhetsträning",
         "date": "2021-09-03",
-        "category": "article",
+        "category": "nyheter",
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iusto earum aliquam ut nobis? Earum, veritatis ad error omnis repellendus fugiat eaque at quasi dolorum suscipit unde, mollitia, modi laudantiumAspernatur, non quasi saepe eius fugit a ducimus ad? Quidem ea ex praesentium eos ipsam voluptas iste porro. Aliquid itaque repellat blanditiis enim facilis doloribus possimus veniam, mollitia obcaecati illum!",
         "author": "Emma"
     }
@@ -71,7 +72,7 @@ export const blogPostsSwe = [
 export const blogPostsEng = [
     {
         "id": 1,
-        "title": "Ny skötare",
+        "title": "New care taker",
         "date": "2021-08-17",
         "category": "news",
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iusto earum aliquam ut nobis? Earum, veritatis ad error omnis repellendus fugiat eaque at quasi dolorum suscipit unde, mollitia, modi laudantiumAspernatur, non quasi saepe eius fugit a ducimus ad? Quidem ea ex praesentium eos ipsam voluptas iste porro. Aliquid itaque repellat blanditiis enim facilis doloribus possimus veniam, mollitia obcaecati illum!",
@@ -79,7 +80,7 @@ export const blogPostsEng = [
     },
     {
         "id": 2,
-        "title": "Utbildning",
+        "title": "Education",
         "date": "2021-08-19",
         "category": "news",
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iusto earum aliquam ut nobis? Earum, veritatis ad error omnis repellendus fugiat eaque at quasi dolorum suscipit unde, mollitia, modi laudantiumAspernatur, non quasi saepe eius fugit a ducimus ad? Quidem ea ex praesentium eos ipsam voluptas iste porro. Aliquid itaque repellat blanditiis enim facilis doloribus possimus veniam, mollitia obcaecati illum!",
@@ -87,7 +88,7 @@ export const blogPostsEng = [
     },
     {
         "id": 3,
-        "title": "Forskning om hundmat",
+        "title": "Dog food-study",
         "date": "2021-08-20",
         "category": "article",
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iusto earum aliquam ut nobis? Earum, veritatis ad error omnis repellendus fugiat eaque at quasi dolorum suscipit unde, mollitia, modi laudantiumAspernatur, non quasi saepe eius fugit a ducimus ad? Quidem ea ex praesentium eos ipsam voluptas iste porro. Aliquid itaque repellat blanditiis enim facilis doloribus possimus veniam, mollitia obcaecati illum!",
@@ -95,7 +96,7 @@ export const blogPostsEng = [
     },
     {
         "id": 4,
-        "title": "Uppdatering restriktioner",
+        "title": "New restrictions",
         "date": "2021-08-23",
         "category": "news",
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iusto earum aliquam ut nobis? Earum, veritatis ad error omnis repellendus fugiat eaque at quasi dolorum suscipit unde, mollitia, modi laudantiumAspernatur, non quasi saepe eius fugit a ducimus ad? Quidem ea ex praesentium eos ipsam voluptas iste porro. Aliquid itaque repellat blanditiis enim facilis doloribus possimus veniam, mollitia obcaecati illum!",
@@ -104,7 +105,7 @@ export const blogPostsEng = [
     },
     {
         "id": 5,
-        "title": "Så får du din hund gladare!",
+        "title": "How to make your dog happier!",
         "date": "2021-08-27",
         "category": "article",
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iusto earum aliquam ut nobis? Earum, veritatis ad error omnis repellendus fugiat eaque at quasi dolorum suscipit unde, mollitia, modi laudantiumAspernatur, non quasi saepe eius fugit a ducimus ad? Quidem ea ex praesentium eos ipsam voluptas iste porro. Aliquid itaque repellat blanditiis enim facilis doloribus possimus veniam, mollitia obcaecati illum!",
@@ -112,7 +113,7 @@ export const blogPostsEng = [
     },
     {
         "id": 6,
-        "title": "Ny matleverantör",
+        "title": "New food supplier",
         "date": "2021-08-29",
         "category": "news",
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iusto earum aliquam ut nobis? Earum, veritatis ad error omnis repellendus fugiat eaque at quasi dolorum suscipit unde, mollitia, modi laudantiumAspernatur, non quasi saepe eius fugit a ducimus ad? Quidem ea ex praesentium eos ipsam voluptas iste porro. Aliquid itaque repellat blanditiis enim facilis doloribus possimus veniam, mollitia obcaecati illum!",
@@ -120,7 +121,7 @@ export const blogPostsEng = [
     },
     {
         "id": 7,
-        "title": "Hundpsykologen har ordet",
+        "title": "Dog psychologist informs",
         "date": "2021-09-01",
         "category": "article",
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iusto earum aliquam ut nobis? Earum, veritatis ad error omnis repellendus fugiat eaque at quasi dolorum suscipit unde, mollitia, modi laudantiumAspernatur, non quasi saepe eius fugit a ducimus ad? Quidem ea ex praesentium eos ipsam voluptas iste porro. Aliquid itaque repellat blanditiis enim facilis doloribus possimus veniam, mollitia obcaecati illum!",
@@ -128,7 +129,7 @@ export const blogPostsEng = [
     },
     {
         "id": 8,
-        "title": "Ensamhetsträning",
+        "title": "Teaching your dog to be alone",
         "date": "2021-09-03",
         "category": "article",
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iusto earum aliquam ut nobis? Earum, veritatis ad error omnis repellendus fugiat eaque at quasi dolorum suscipit unde, mollitia, modi laudantiumAspernatur, non quasi saepe eius fugit a ducimus ad? Quidem ea ex praesentium eos ipsam voluptas iste porro. Aliquid itaque repellat blanditiis enim facilis doloribus possimus veniam, mollitia obcaecati illum!",
