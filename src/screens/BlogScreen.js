@@ -55,20 +55,31 @@ const BlogScreen = () => {
     }
   };
 
+  const handleSort = (value) => {
+    const sortedPosts = [...filteredPosts].sort(function (a, b) {
+      var aDate = new Date(a.date);
+      var bDate = new Date(b.date);
+
+      if (value === 'latest') return bDate - aDate;
+      else return aDate - bDate;
+    });
+
+    setFilteredPosts(sortedPosts);
+  };
+
   return (
     <section>
       <main className={Styles.mainContainer}>
-        <button onClick={() => latestFirst(filteredPosts)}>
-          Sortera nyast först
-        </button>
-        <button onClick={() => oldestFirst(filteredPosts)}>
-          Sortera äldst först
-        </button>
-        <label for='cars'>Filtrera:</label>
+        <label for='filter'>Filtrera:</label>
         <select id='filter' onChange={(e) => handleFilter(e.target.value)}>
           <option value='all'>Visa alla</option>
           <option value='news'>Nyheter</option>
           <option value='articles'>Artiklar</option>
+        </select>
+        <label for='sort'>Sort:</label>
+        <select id='sort' onChange={(e) => handleSort(e.target.value)}>
+          <option value='latest'>Nyast först</option>
+          <option value='oldest'>Äldst först</option>
         </select>
         <div className={Styles.topAbout}>
           <article className={Styles.blogPosts}>
