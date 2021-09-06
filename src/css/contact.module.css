@@ -1,14 +1,12 @@
 .logoContainer {
     display: flex;
     flex-direction: column;
-}
-section {
     display: flex;
     width: 90%;
     margin: 0 auto;
 }
 .img {
-    width: 50vw;
+    width: 45vw;
     height: 60vh;
     margin-top: 2rem;
 }
@@ -17,15 +15,12 @@ section {
     margin-top: 2rem;
     color: var(--hundkojan-blue);
 }
-.contactDetailsContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 .contactDetails {
     display: flex;
     justify-content: center;
     height: 60%;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .contactDetailsTitle {
     font-size: 1.6rem;
@@ -51,6 +46,9 @@ section {
 }
 .phoneContainer {
     margin-bottom: .6rem;
+}
+.emailContainer {
+    margin-bottom: 2rem;
 }
 .subHeading {
     font-weight: bold;

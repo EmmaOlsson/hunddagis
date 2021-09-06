@@ -41,7 +41,7 @@ const ContactScreen = () => {
               <span>070-567 47 23</span>
             </div>
 
-            <div>
+            <div className={style.emailContainer}>
               <span className={style.subHeading}>{t('contact.contactDetails.Email')} </span>
               <span>test@testsson.com</span>
             </div>
