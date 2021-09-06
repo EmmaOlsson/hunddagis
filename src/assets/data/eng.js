@@ -22,6 +22,13 @@ export default {
     },
   },
 
+  footer: {
+    about: "About",
+    blog: "Blog",
+    questions: "Questions",
+    contact: "Contact"
+  },
+
   faq: {
     title: 'Questions',
     subHeading:
@@ -101,5 +108,5 @@ export default {
     Pictures: {
       title: 'Latest pictures',
     },
-}
+  }
 }

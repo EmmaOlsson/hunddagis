@@ -22,6 +22,13 @@ export default {
     },
   },
 
+  footer: {
+    about: "Om oss",
+    blog: "Blogg",
+    questions: "Vanliga frågor",
+    contact: "Kontakt"
+  },
+
   faq: {
     title: 'Vanliga Frågor',
     subHeading:

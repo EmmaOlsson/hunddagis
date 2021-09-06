@@ -1,7 +1,7 @@
 import React from 'react';
 import hunddagis from '../assets/graphics/hunddagis.jpg';
 import style from '../css/contact.module.css';
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 const ContactScreen = () => {
 
@@ -15,7 +15,7 @@ const ContactScreen = () => {
 
       <div className={style.contactDetailsContainer}>
         <div>
-          <img className={style.img} src={hunddagis}></img>
+          <img className={style.img} alt="location" src={hunddagis}></img>
         </div>
 
         <div className={style.contactDetails}>
