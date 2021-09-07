@@ -6,7 +6,7 @@ import Styles from '../css/footer.module.css';
 
 const Footer = () => {
 
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <section className={ Styles.footerContainer } >
