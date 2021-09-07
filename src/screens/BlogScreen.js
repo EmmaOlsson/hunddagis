@@ -69,19 +69,25 @@ const BlogScreen = () => {
   return (
     <section>
       <main className={Styles.mainContainer}>
-        <label>Filtrera:</label>
+        <label>{t('blog.blogPostData.filters.filterLabel')}:</label>
         <select id='filter' onChange={(e) => handleFilter(e.target.value)}>
-          <option value='all'>Visa alla</option>
-          <option value='news'>Nyheter</option>
-          <option value='articles'>Artiklar</option>
+          <option value='all'>{t('blog.blogPostData.filters.all')}</option>
+          <option value='news'>{t('blog.blogPostData.filters.news')}</option>
+          <option value='articles'>
+            {t('blog.blogPostData.filters.articles')}
+          </option>
         </select>
-        <label>Sort:</label>
+        <label>{t('blog.blogPostData.filters.sortLabel')}:</label>
         <select
           id='sort'
           onChange={(e) => handleSort(e.target.value, filteredPosts, posts)}
         >
-          <option value='latest'>Nyast först</option>
-          <option value='oldest'>Äldst först</option>
+          <option value='latest'>
+            {t('blog.blogPostData.filters.latest')}
+          </option>
+          <option value='oldest'>
+            {t('blog.blogPostData.filters.oldest')}
+          </option>
         </select>
         <div className={Styles.topAbout}>
           <article className={Styles.blogPosts}>
