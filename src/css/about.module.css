@@ -6,6 +6,8 @@
 
 .topAbout{
     height: fit-content;
+    /* Ta bort height sen */
+    /* height: 100vh; */
     display: flex;
 }
 
@@ -91,7 +93,7 @@
 
 /* Contact Form */
 
-.contactForm{
+/* .contactForm{
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -124,13 +126,11 @@
     padding: .3rem .5rem;
 }
 
-.contactFormText{
-    height: 100%;
-}
+.contactText{
+    min-height: 20rem;
+} */
 
-.contactText {
-    size: 100%;
-}
+
 
 
 /* Responsive */
