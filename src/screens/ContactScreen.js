@@ -28,22 +28,22 @@ const ContactScreen = () => {
 
             <div className={style.nameContainer}>
               <span className={style.subHeading}>{t('contact.contactDetails.name')} </span>
-              <span>Hunddagis</span>
+              <span className={style.information}>Hunddagis</span>
             </div>
 
             <div className={style.addressContainer}>
               <span className={style.subHeading}>{t('contact.contactDetails.address')} </span>
-              <span>Båthusgatan 9, 25667 Helsingborg</span>
+              <span className={style.information}>Båthusgatan 9, 25667 Helsingborg</span>
             </div>
 
             <div className={style.phoneContainer}>
               <span className={style.subHeading}>{t('contact.contactDetails.phone')} </span>
-              <span>070-567 47 23</span>
+              <span className={style.information}>000000000</span>
             </div>
 
             <div className={style.emailContainer}>
               <span className={style.subHeading}>{t('contact.contactDetails.Email')} </span>
-              <span>test@testsson.com</span>
+              <span className={style.information}>test@testsson.com</span>
             </div>
           </div>
         </div>
