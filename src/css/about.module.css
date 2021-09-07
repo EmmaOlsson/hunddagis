@@ -1,6 +1,6 @@
 
 .mainContainer{
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -50,7 +50,7 @@
 /* Staff */
 
 .bottomAbout{
-    height: fit-content;
+    height: 100%;
     margin-top: .5rem;
 }
 
@@ -64,7 +64,8 @@
     display: flex;
     flex-direction: column;
     background: var(--light-blue);
-    align-items: center;
+    align-items: stretch;
+    text-align: center;
     padding: 1.5rem;
     margin: 1rem;
     border-radius: .4rem;
@@ -81,7 +82,6 @@
 }
 
 .staffImg{
-    width: inherit;
     background: var(--white-blue);
     border-radius: .3rem;
     box-shadow: var(--sky-blue) 0px .2rem .5rem;
@@ -90,11 +90,6 @@
 
 
 /* Contact Form */
-
-
-.contactContainer{
-
-}
 
 .contactForm{
     display: flex;
