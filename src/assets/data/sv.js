@@ -2,6 +2,7 @@ import { servicesSwe } from './servicesData'
 import { staffDataSwe } from './staffData';
 import { aboutUsDataSwe } from './aboutUsData';
 import { blogPostsSwe } from './blogPostData';
+import {formSwe} from './formData';
 
 
 export default {
@@ -39,6 +40,11 @@ export default {
       phone: 'Telefon:',
       Email: 'E-post:',
     },
+
+    contactForm: {
+      title: 'Kontaktformulär',
+      formData: formSwe,
+    }
   },
 
   footer: {
