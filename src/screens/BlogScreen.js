@@ -6,11 +6,13 @@ import { useTranslation } from 'react-i18next';
 const BlogScreen = () => {
   const [posts, setPosts] = useState([]);
   const [filteredPosts, setFilteredPosts] = useState([]);
+  const [isSorted, setIsSorted] = useState('');
+  const [isFiltered, setIsFiltered] = useState('');
 
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
-    const blogDataFromi18n = i18n.t('blog.blogPostData', {
+    const blogDataFromi18n = i18n.t('blog.blogPostData.posts', {
       returnObjects: true,
     });
     setPosts(blogDataFromi18n);
@@ -18,6 +20,7 @@ const BlogScreen = () => {
   }, [i18n, t]);
 
   const handleFilter = (value) => {
+    console.log('posts: ' + posts);
     switch (value) {
       case 'all':
         setFilteredPosts(posts);
@@ -37,6 +40,8 @@ const BlogScreen = () => {
       default:
         setFilteredPosts(filteredPosts);
     }
+
+    setIsFiltered(value);
   };
 
   const handleSort = (value) => {
@@ -58,6 +63,7 @@ const BlogScreen = () => {
 
     setFilteredPosts(sortedFilteredPosts);
     setPosts(sortedPosts);
+    setIsSorted(value);
   };
 
   return (
@@ -70,7 +76,10 @@ const BlogScreen = () => {
           <option value='articles'>Artiklar</option>
         </select>
         <label>Sort:</label>
-        <select id='sort' onChange={(e) => handleSort(e.target.value)}>
+        <select
+          id='sort'
+          onChange={(e) => handleSort(e.target.value, filteredPosts, posts)}
+        >
           <option value='latest'>Nyast först</option>
           <option value='oldest'>Äldst först</option>
         </select>
