@@ -100,7 +100,8 @@ export default {
   },
 
   blog: {
-    title: 'Blog post',
+    title: 'Hundkojans blogg',
+    publishedText: 'Publicerat av',
     blogPostData: blogPostsSwe
   },
 }

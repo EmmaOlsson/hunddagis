@@ -99,7 +99,8 @@ export default {
   },
 
   blog: {
-    title: 'Blog post',
+    title: 'Blog of Hundkojan',
+    publishedText: 'Published by',
     blogPostData: blogPostsEng
   }
 }
