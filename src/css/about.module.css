@@ -88,6 +88,58 @@
     margin-bottom: 1rem;
 }
 
+
+/* Contact Form */
+
+
+.contactContainer{
+
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 2rem;
+    border-radius: .3rem;
+    background: var(--light-blue);
+}
+
+.contactFormContact{
+    width: inherit;
+    text-align: left;
+}
+
+.contactFormContact li{
+    padding-bottom: 1rem;
+}
+
+.contactFormContact label{
+    color: var(--black-sky);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.contactFormContact input, .contactFormContact select {
+    width: 100%;
+}
+
+.contactFormContact input, .contactFormContact select, .contactFormContact textarea{
+    border: none;
+    padding: .3rem .5rem;
+}
+
+.contactFormText{
+    height: 100%;
+}
+
+.contactText {
+    size: 100%;
+}
+
+
+/* Responsive */
+
 @media only screen and (max-width: 800px){
     .topAbout{
         flex-direction: column;
