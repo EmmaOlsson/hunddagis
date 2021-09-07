@@ -14,7 +14,6 @@ export const servicesSwe = [
         "price": "2290 kr i månaden"
     },
 
-
     {
         "id": 3,
         "type": "Flex",

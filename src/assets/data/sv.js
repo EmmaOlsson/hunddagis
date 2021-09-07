@@ -13,10 +13,19 @@ export default {
   },
 
   startPage: {
-    title: 'Välkommen till Hundkojans hunddagis',
+    title: 'Hundkojans hunddagis',
+    openingHours: {
+      title: 'Våra öppettider:',
+      dropOff: 'Inlämning: 07:00 - 09:00',
+      pickUp: 'Hämtning: 14:00 - 17:30'
+    },
     ourServices: {
       title: 'Våra tjänster',
       servicesData: servicesSwe,
+    },
+    signUp: {
+      title: 'Intresserad av en plats?',
+      signUp: 'Skicka ansökan'
     }
   },
 

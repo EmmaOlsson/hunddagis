@@ -20,12 +20,6 @@ const HomeScreen = () => {
     setServicesData(serviceDataFromi18n)
   }, [i18n, t])
 
-/*   useEffect(() => {
-    const serviceDataFromi18n = i18n.t('startPage.title', {returnObjects: true})
-    setServicesData(serviceDataFromi18n)
-  }, [i18n, t])
- */
-
   function handleClick() {
     history.push("/contact");
   }
@@ -38,36 +32,34 @@ const HomeScreen = () => {
         </div>
 
         <div className={Styles.middleSection} >
-
           <article className={Styles.infoBox} >
-            <h3>Hundkojans hunddagis</h3>
-            <p>Våra öppettider</p>
+            <h3>{t('startPage.title')}</h3>
+            <p>{t('startPage.openingHours.title')}</p>
             <p>Inlämning: 07:00 - 09:00</p>
             <p>Hämtning: 14:00 - 17:30</p>
           </article>
 
           <article className={Styles.applicationBox} >
             <div className={Styles.applicationBoxContent} >
-              <h5>Intresserad av en dagisplats?</h5>
-            <button className={Styles.applicationButton} onClick={handleClick} >Skicka ansökan</button>
+              <h5>{t('startPage.signUp.title')}</h5>
+            <button className={Styles.applicationButton} onClick={handleClick} >{t('startPage.signUp.signUp')}</button>
               </div>
           </article>
-
         </div>
 
-        <div className={Styles.bottomSection} >
+{/*         <div className={Styles.bottomSection} > */}
             <article className={Styles.servicesContainer} >
               {
                 servicesData.map((service) => {
                   return <section className={Styles.priceInfo} key={service.id} >
-                    <h4>{service.type}</h4>
+                    <h3>{service.type}</h3>
                     <p>{service.days}</p>
                     <p>{service.price}</p>
                   </section>
                 })
               }
             </article>
-        </div>
+{/*         </div> */}
     </section>
     );
   };
