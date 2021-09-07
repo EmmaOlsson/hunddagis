@@ -1,12 +1,11 @@
 .logoContainer {
     display: flex;
     flex-direction: column;
-    display: flex;
     width: 90%;
     margin: 0 auto;
 }
 .img {
-    width: 40vw;
+    width: 50vw;
     height: 55vh;
     margin-top: 2rem;
 }
@@ -16,11 +15,15 @@
     color: var(--hundkojan-blue);
 }
 .contactDetails {
-    display: flex;
-    justify-content: flex-start;
     height: 60%;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+.contactDetailsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: hotpink;
 }
 .contactDetailsTitle {
     font-size: 1.9rem;
@@ -32,7 +35,7 @@
     display: flex;
     flex-direction: column;
     border: 4px solid var(--sky-blue);
-    padding: 2rem 12.2rem 0 2rem;
+    padding: 2rem 12rem 0 2rem;
     color: var(--grey-blue);
 }
 .titleContainer {
