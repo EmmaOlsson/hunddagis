@@ -1,72 +1,80 @@
-.mainContainer{
-    width: 100%;
-    margin:0 auto;
+.mainContainer {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .blogPosts {
-    background: var(--white-blue);
-    padding: 2rem;
+  background: var(--white-blue);
+  padding: 2rem;
 }
 
-.blogPostContent{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 3rem;
-    background: var(--white-regular);
-    margin: 1.2rem 0;
-    line-height: 1.5rem;
-    border-radius: .4rem;
+.blogPostContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+  background: var(--white-regular);
+  margin: 1.2rem 0;
+  line-height: 1.5rem;
+  border-radius: 0.4rem;
 }
 
-.blogPostTop{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: var(--black-sky);
+.blogPostTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--black-sky);
 }
 
-.blogTitle{
-    font-weight: 500;
+.blogTitle {
+  font-weight: 500;
 }
 
-.blogCategory{
-    font-style: italic;
-    background: var(--white-blue);
-    width: fit-content;
-    padding: .1rem 1rem;
-    font-weight: 400;
+.blogCategory {
+  font-style: italic;
+  background: var(--white-blue);
+  width: fit-content;
+  padding: 0.1rem 1rem;
+  font-weight: 400;
 }
 
 .blogText {
-    padding: 1.2rem 0;
-    font-size: .9rem;
+  padding: 1.2rem 0;
+  font-size: 0.9rem;
 }
 
 .blogPostBottom {
-    color: var(--hundkojan-blue);
-    font-size: .8rem;
-    line-height: 1rem;
-    text-align: end;
-    padding-right: 1rem;
+  color: var(--hundkojan-blue);
+  font-size: 0.8rem;
+  line-height: 1rem;
+  text-align: end;
+  padding-right: 1rem;
 }
 
-
-
-
-
-
-
+/* Filter styling */
+.topContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 0.5rem;
+  margin: 0;
+  outline: none;
+}
 
 /* Responsive */
 
-@media only screen and (max-width: 800px){
-    .topAbout{
-        flex-direction: column;
-    }
+@media only screen and (max-width: 800px) {
+  .topAbout {
+    flex-direction: column;
+  }
 
-    .blogPosts{
-        margin-bottom: .5rem;
-        margin-right: 0;
-    }
+  .blogPosts {
+    margin-bottom: 0.5rem;
+    margin-right: 0;
+  }
 }
