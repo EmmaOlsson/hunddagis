@@ -2,7 +2,6 @@
 .footerContainer{
     width: 100%;
     background-color: var(--white-blue);
-    margin-top: 0.5rem;
 }
 
 .mainFooter {
@@ -12,7 +11,7 @@
     width: 90%;
     height: 100%;
     margin: 0 auto;
-/*     padding-top: 2rem; */
+    padding-top: 3rem;
 }
 
 .footerLinks {
