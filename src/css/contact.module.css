@@ -1,15 +1,12 @@
 .logoContainer {
     display: flex;
     flex-direction: column;
-}
-section {
-    display: flex;
     width: 90%;
     margin: 0 auto;
 }
 .img {
     width: 50vw;
-    height: 60vh;
+    height: 55vh;
     margin-top: 2rem;
 }
 .contactTitle {
@@ -17,18 +14,19 @@ section {
     margin-top: 2rem;
     color: var(--hundkojan-blue);
 }
+.contactDetails {
+    height: 60%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 .contactDetailsContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-.contactDetails {
-    display: flex;
-    justify-content: center;
-    height: 60%;
-    margin-top: 2rem;
+    grid-template-rows: 1fr 1fr;
+    background-color: hotpink;
 }
 .contactDetailsTitle {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     width: 100%;
     font-weight: bold;
     letter-spacing: 1px;
@@ -37,7 +35,7 @@ section {
     display: flex;
     flex-direction: column;
     border: 4px solid var(--sky-blue);
-    padding: 2rem 1rem 0 1rem;
+    padding: 2rem 12rem 0 2rem;
     color: var(--grey-blue);
 }
 .titleContainer {
@@ -52,7 +50,13 @@ section {
 .phoneContainer {
     margin-bottom: .6rem;
 }
+.emailContainer {
+    margin-bottom: 2rem;
+}
 .subHeading {
     font-weight: bold;
+    font-size: 1.2rem;
+}
+.information {
     font-size: 1.1rem;
 }

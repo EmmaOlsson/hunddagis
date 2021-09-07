@@ -3,6 +3,7 @@ import { servicesEng } from './servicesData'
 import { aboutUsDataEng } from './aboutUsData'
 import { blogPostsEng } from './blogPostData'
 
+
 export default {
   navbar: {
     about: 'About',
@@ -12,7 +13,20 @@ export default {
   },
 
   startPage: {
-    title: 'Welcome to Hundkojans Hunddagis',
+    title: 'Hundkojan dog care center',
+    openingHours: {
+      title: 'Our opening hours:',
+      dropOff: 'Drop off: 07:00 - 09:00',
+      pickUp: 'Pick up: 14:00 - 17:30'
+    },
+    ourServices: {
+      title: 'Our services',
+      servicesData: servicesEng,
+    },
+    signUp: {
+      title: 'Interested?',
+      signUp: 'Sign up'
+    }
   },
 
   contact: {
@@ -25,6 +39,13 @@ export default {
       phone: 'Phone:',
       Email: 'E-mail:',
     },
+  },
+
+  footer: {
+    about: "About",
+    blog: "Blog",
+    questions: "Questions",
+    contact: "Contact"
   },
 
   faq: {
@@ -78,7 +99,8 @@ export default {
   },
 
   blog: {
-    title: 'Blog post',
+    title: 'Blog of Hundkojan',
+    publishedText: 'Published by',
     blogPostData: blogPostsEng
   }
 }

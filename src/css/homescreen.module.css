@@ -18,13 +18,13 @@
     opacity: 60%;
 }
 
-.bottomSection {
-    height: 100%;
+.middleSection {
     width: 100%;
     display: flex;
     flex-direction: row;
     padding: 3rem 8rem 4rem 3rem;
     position: absolute;
+    bottom: 8rem;
 } 
 
 .infoBox {
@@ -55,6 +55,7 @@
 }
 
 .applicationBox h5 {
+    width: 60%;
     font-size: medium;
     font-weight: normal;
     align-items: center;
@@ -66,6 +67,7 @@
     color: var(--black-regular);
     background-color: var(--light-blue);
     padding: .7rem;
+    min-width: 8rem;
     text-transform: uppercase;
     font-weight: bolder;
     cursor: pointer;
@@ -77,4 +79,28 @@
 
 .applicationButton:hover {
     opacity: 80%;
+}
+
+.servicesContainer {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0.8rem;
+    padding: 0.5rem 0 0.7rem 0;
+}
+
+.priceInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.5rem;
+    padding: 2rem;
+    background-color: var(--light-blue);
+    border-radius: .4rem;
+    color: var(--black-sky);
+}
+
+.priceInfo h3 {
+    letter-spacing: .1rem;
 }

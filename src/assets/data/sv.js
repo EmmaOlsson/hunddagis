@@ -1,8 +1,8 @@
-
 import { servicesSwe } from './servicesData'
 import { staffDataSwe } from './staffData';
 import { aboutUsDataSwe } from './aboutUsData';
 import { blogPostsSwe } from './blogPostData';
+
 
 export default {
   navbar: {
@@ -13,7 +13,20 @@ export default {
   },
 
   startPage: {
-    title: 'Välkommen till Hundkojans hunddagis',
+    title: 'Hundkojans hunddagis',
+    openingHours: {
+      title: 'Våra öppettider:',
+      dropOff: 'Inlämning: 07:00 - 09:00',
+      pickUp: 'Hämtning: 14:00 - 17:30'
+    },
+    ourServices: {
+      title: 'Våra tjänster',
+      servicesData: servicesSwe,
+    },
+    signUp: {
+      title: 'Intresserad av en plats?',
+      signUp: 'Skicka ansökan'
+    }
   },
 
   contact: {
@@ -26,6 +39,13 @@ export default {
       phone: 'Telefon:',
       Email: 'E-post:',
     },
+  },
+
+  footer: {
+    about: "Om oss",
+    blog: "Blogg",
+    questions: "Vanliga frågor",
+    contact: "Kontakt"
   },
 
   faq: {
@@ -80,7 +100,8 @@ export default {
   },
 
   blog: {
-    title: 'Blog post',
+    title: 'Hundkojans blogg',
+    publishedText: 'Publicerat av',
     blogPostData: blogPostsSwe
   },
 }

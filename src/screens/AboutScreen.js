@@ -72,6 +72,43 @@ const AboutScreen = () => {
           }
         </aside>
       </div>
+
+      {/* Contact Form */}
+      {/* <aside className={Styles.contactContainer}>
+        <h2 className={Styles.aboutTitles}>Kontakta oss</h2>
+        <form className={Styles.contactForm}>
+          <ul className={Styles.contactFormContact}>
+            <li>
+              <label for="name">Förnamn:</label>
+              <input type="text"></input>
+            </li>
+            <li>
+              <label for="name">Efternamn:</label>
+              <input type="text"></input>
+            </li>
+            <li>
+              <label for="name">Email:</label>
+              <input type="text"></input>
+            </li>
+            <li>
+              <label for="dropDownMenu">Ämne:</label>
+              <select>
+                <option value="booking">Boka plats</option>
+                <option value="questions">Fråga om tjänst</option>
+                <option value="feedback">Feedback</option>
+                <option value="complaint">Klagomål</option>
+              </select>
+            </li>
+          </ul>
+          <ul className={Styles.contactFormText}>
+            <li>
+              <label for="name">Innehåll:</label>
+              <input className={Styles.contactText}></input>
+            </li>
+          </ul>
+        </form>
+      </aside> */}
+
       {/* Staff */}
       <div className={Styles.bottomAbout}>
         <h2 className={Styles.aboutTitles}>{t('about.ourStaff.title')}</h2>

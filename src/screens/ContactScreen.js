@@ -1,7 +1,7 @@
 import React from 'react';
 import hunddagis from '../assets/graphics/hunddagis.jpg';
 import style from '../css/contact.module.css';
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 const ContactScreen = () => {
 
@@ -15,8 +15,11 @@ const ContactScreen = () => {
 
       <div className={style.contactDetailsContainer}>
         <div>
-          <img className={style.img} src={hunddagis}></img>
+          <img className={style.img} alt="location" src={hunddagis}></img>
         </div>
+
+        {/* // Här kan du lägga in formuläret (ta bort min lilla div om det behövs) */}
+        <div>Formulär</div>
 
         <div className={style.contactDetails}>
           <div className={style.content}>
@@ -28,22 +31,22 @@ const ContactScreen = () => {
 
             <div className={style.nameContainer}>
               <span className={style.subHeading}>{t('contact.contactDetails.name')} </span>
-              <span>Hunddagis</span>
+              <span className={style.information}>Hunddagis</span>
             </div>
 
             <div className={style.addressContainer}>
               <span className={style.subHeading}>{t('contact.contactDetails.address')} </span>
-              <span>Båthusgatan 9, 25667 Helsingborg</span>
+              <span className={style.information}>Båthusgatan 9, 25667 Helsingborg</span>
             </div>
 
             <div className={style.phoneContainer}>
               <span className={style.subHeading}>{t('contact.contactDetails.phone')} </span>
-              <span>070-567 47 23</span>
+              <span className={style.information}>000000000</span>
             </div>
 
-            <div>
+            <div className={style.emailContainer}>
               <span className={style.subHeading}>{t('contact.contactDetails.Email')} </span>
-              <span>test@testsson.com</span>
+              <span className={style.information}>test@testsson.com</span>
             </div>
           </div>
         </div>
