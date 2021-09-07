@@ -18,6 +18,9 @@ const ContactScreen = () => {
           <img className={style.img} alt="location" src={hunddagis}></img>
         </div>
 
+        {/* // Här kan du lägga in formuläret (ta bort min lilla div om det behövs) */}
+        <div>Formulär</div>
+
         <div className={style.contactDetails}>
           <div className={style.content}>
             <div className={style.titleContainer}>
