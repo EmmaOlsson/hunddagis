@@ -1,8 +1,8 @@
-import { staffDataEng } from './staffData'
-import { servicesEng } from './servicesData'
-import { aboutUsDataEng } from './aboutUsData'
-import { blogPostsEng } from './blogPostData'
-
+import { staffDataEng } from './staffData';
+import { servicesEng } from './servicesData';
+import { aboutUsDataEng } from './aboutUsData';
+import { blogPostsEng } from './blogPostData';
+import { blogFiltersEng } from './blogFilter';
 
 export default {
   navbar: {
@@ -17,7 +17,7 @@ export default {
     openingHours: {
       title: 'Our opening hours:',
       dropOff: 'Drop off: 07:00 - 09:00',
-      pickUp: 'Pick up: 14:00 - 17:30'
+      pickUp: 'Pick up: 14:00 - 17:30',
     },
     ourServices: {
       title: 'Our services',
@@ -25,8 +25,8 @@ export default {
     },
     signUp: {
       title: 'Interested?',
-      signUp: 'Sign up'
-    }
+      signUp: 'Sign up',
+    },
   },
 
   contact: {
@@ -42,10 +42,10 @@ export default {
   },
 
   footer: {
-    about: "About",
-    blog: "Blog",
-    questions: "Questions",
-    contact: "Contact"
+    about: 'About',
+    blog: 'Blog',
+    questions: 'Questions',
+    contact: 'Contact',
   },
 
   faq: {
@@ -84,23 +84,24 @@ export default {
   about: {
     aboutUs: {
       title: '- We take care of your best friend!',
-      aboutUsData: aboutUsDataEng
+      aboutUsData: aboutUsDataEng,
     },
 
     ourServices: {
       title: 'Our services',
-      servicesData: servicesEng
+      servicesData: servicesEng,
     },
 
     ourStaff: {
       title: 'Our staff',
-      staffData: staffDataEng
+      staffData: staffDataEng,
     },
   },
 
   blog: {
     title: 'Blog of Hundkojan',
     publishedText: 'Published by',
-    blogPostData: blogPostsEng
-  }
-}
+    blogPostData: blogPostsEng,
+    filter: blogFiltersEng,
+  },
+};

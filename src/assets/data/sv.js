@@ -1,8 +1,8 @@
-import { servicesSwe } from './servicesData'
+import { servicesSwe } from './servicesData';
 import { staffDataSwe } from './staffData';
 import { aboutUsDataSwe } from './aboutUsData';
 import { blogPostsSwe } from './blogPostData';
-
+import { blogFiltersSwe } from './blogFilter';
 
 export default {
   navbar: {
@@ -17,7 +17,7 @@ export default {
     openingHours: {
       title: 'Våra öppettider:',
       dropOff: 'Inlämning: 07:00 - 09:00',
-      pickUp: 'Hämtning: 14:00 - 17:30'
+      pickUp: 'Hämtning: 14:00 - 17:30',
     },
     ourServices: {
       title: 'Våra tjänster',
@@ -25,8 +25,8 @@ export default {
     },
     signUp: {
       title: 'Intresserad av en plats?',
-      signUp: 'Skicka ansökan'
-    }
+      signUp: 'Skicka ansökan',
+    },
   },
 
   contact: {
@@ -42,10 +42,10 @@ export default {
   },
 
   footer: {
-    about: "Om oss",
-    blog: "Blogg",
-    questions: "Vanliga frågor",
-    contact: "Kontakt"
+    about: 'Om oss',
+    blog: 'Blogg',
+    questions: 'Vanliga frågor',
+    contact: 'Kontakt',
   },
 
   faq: {
@@ -84,24 +84,24 @@ export default {
   about: {
     aboutUs: {
       title: '- Vi tar hand om din bästa vän!',
-      aboutUsData: aboutUsDataSwe
+      aboutUsData: aboutUsDataSwe,
     },
 
     ourServices: {
       title: 'Våra tjänster',
-      servicesData: servicesSwe
-      
+      servicesData: servicesSwe,
     },
 
     ourStaff: {
       title: 'Vår personal',
-      staffData: staffDataSwe
+      staffData: staffDataSwe,
     },
   },
 
   blog: {
     title: 'Hundkojans blogg',
     publishedText: 'Publicerat av',
-    blogPostData: blogPostsSwe
+    blogPostData: blogPostsSwe,
+    filter: blogFiltersSwe,
   },
-}
+};

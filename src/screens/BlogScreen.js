@@ -12,7 +12,7 @@ const BlogScreen = () => {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
-    const blogDataFromi18n = i18n.t('blog.blogPostData.posts', {
+    const blogDataFromi18n = i18n.t('blog.blogPostData', {
       returnObjects: true,
     });
     setPosts(blogDataFromi18n);
@@ -74,7 +74,7 @@ const BlogScreen = () => {
             <h2>{t('blog.title')}</h2>
             <section className={Styles.selectContainer}>
               <label className={Styles.label}>
-                {t('blog.blogPostData.filters.filterLabel')}:
+                {t('blog.filter.filterLabel')}:
               </label>
               <select
                 className={Styles.select}
@@ -82,16 +82,16 @@ const BlogScreen = () => {
                 onChange={(e) => handleFilter(e.target.value)}
               >
                 <option className={Styles.option} value='all'>
-                  {t('blog.blogPostData.filters.all')}
+                  {t('blog.filter.all')}
                 </option>
                 <option className={Styles.option} value='news'>
-                  {t('blog.blogPostData.filters.news')}
+                  {t('blog.filter.news')}
                 </option>
                 <option className={Styles.option} value='articles'>
-                  {t('blog.blogPostData.filters.articles')}
+                  {t('blog.filter.articles')}
                 </option>
               </select>
-              <label>{t('blog.blogPostData.filters.sortLabel')}:</label>
+              <label>{t('blog.filter.sortLabel')}:</label>
               <select
                 className={Styles.select}
                 id={Styles.sort}
@@ -100,10 +100,10 @@ const BlogScreen = () => {
                 }
               >
                 <option className={Styles.option} value='latest'>
-                  {t('blog.blogPostData.filters.latest')}
+                  {t('blog.filter.latest')}
                 </option>
                 <option className={Styles.option} value='oldest'>
-                  {t('blog.blogPostData.filters.oldest')}
+                  {t('blog.filter.oldest')}
                 </option>
               </select>
             </section>
