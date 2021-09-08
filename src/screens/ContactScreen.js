@@ -58,35 +58,35 @@ const ContactScreen = () => {
         {/* Contact Form */}
         <aside className={style.contactContainer}>
           <form className={style.contactForm}>
-          <h3 className={style.contactFormTitle}>Kontaktformulär</h3>
+          <h3 className={style.contactFormTitle}>{t('contact.contactForm.title')}</h3>
             <ul className={style.contactFormContact}>
               <li>
-                <label for="firstName">Förnamn:</label>
+                <label for="firstName">{t('contact.contactForm.formData.firstName')}</label>
                 <input type="text" id="firstName"></input>
               </li>
               <li>
-                <label for="lastName">Efternamn:</label>
+                <label for="lastName">{t('contact.contactForm.formData.lastName')}</label>
                 <input type="text" id="lastName"></input>
               </li>
               <li>
-                <label for="email">Email:</label>
+                <label for="email">{t('contact.contactForm.formData.email')}</label>
                 <input type="email" id="email"></input>
               </li>
               <li>
-                <label for="dropDownMenu">Ämne:</label>
+                <label for="dropDownMenu">{t('contact.contactForm.formData.subject')}</label>
                 <select className={style.dropDownMenu} id="dropDownMenu">
-                  <option value="booking">Boka plats</option>
-                  <option value="questions">Fråga om tjänst</option>
-                  <option value="feedback">Feedback</option>
-                  <option value="complaint">Klagomål</option>
+                  <option value="booking">{t('contact.contactForm.formData.subject')}</option>
+                  <option value="questions">{t('contact.contactForm.formData.subject')}</option>
+                  <option value="feedback">{t('contact.contactForm.formData.subject')}</option>
+                  <option value="complaint">{t('contact.contactForm.formData.subject')}</option>
                 </select>
               </li>
-              <li>
-                <label for="message">Meddelande:</label>
-                <input type="text" className={style.contactText}id="message"></input>
+              <li className={style.textAreaContainer}>
+                <label for="message">{t('contact.contactForm.formData.message')}</label>
+                <textarea type="text" className={style.contactText}id="message"></textarea>
               </li>
               <li>
-                <input type="submit" value="Skicka" onClick={handleClick} className={style.submitForm}></input>
+                <input type="submit" value={t('contact.contactForm.formData.button')} onClick={handleClick} className={style.submitForm}></input>
               </li>
             </ul>
           </form>
