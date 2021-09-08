@@ -4,12 +4,18 @@
     width: 90%;
     margin: 0 auto;
 }
-
+.img {
+    width: 45vw;
+    height: 55vh;
+}
+.contactTitle {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: var(--hundkojan-blue);
+}
 .contactDetailsContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* grid-template-columns: 1fr 1fr; */
-   /*  grid-template-rows: 1fr 1fr; */
     column-gap: .5rem;
 }
 
