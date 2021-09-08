@@ -27,11 +27,11 @@ const HomeScreen = () => {
   return (
     <section className={Styles.sectionContainer}>
       
-        <div className={Styles.topSection} >
+        <div className={Styles.topContainer} >
           <img className={Styles.mainImg} src={happyDogsImg} alt="happy-dogs" ></img>
         </div>
 
-        <div className={Styles.middleSection} >
+        <div className={Styles.middleContainer} >
           <article className={Styles.infoBox} >
             <h3>{t('startPage.title')}</h3>
             <p>{t('startPage.openingHours.title')}</p>
@@ -47,19 +47,17 @@ const HomeScreen = () => {
           </article>
         </div>
 
-{/*         <div className={Styles.bottomSection} > */}
-            <article className={Styles.servicesContainer} >
-              {
-                servicesData.map((service) => {
-                  return <section className={Styles.priceInfo} key={service.id} >
-                    <h3>{service.type}</h3>
-                    <p>{service.days}</p>
-                    <p>{service.price}</p>
-                  </section>
-                })
-              }
-            </article>
-{/*         </div> */}
+        <article className={Styles.bottomContainer} >
+          {
+            servicesData.map((service) => {
+              return <section className={Styles.priceInfo} key={service.id} >
+                <h3>{service.type}</h3>
+                <p>{service.days}</p>
+                <p>{service.price}</p>
+              </section>
+            })
+          }
+        </article>
     </section>
     );
   };
