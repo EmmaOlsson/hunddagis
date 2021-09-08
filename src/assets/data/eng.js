@@ -4,7 +4,7 @@ import { aboutUsDataEng } from './aboutUsData'
 import { blogPostsEng } from './blogPostData'
 import { formEng } from './formData'
 
-export default {
+export const en = {
   navbar: {
     about: 'About',
     blog: 'Blog',

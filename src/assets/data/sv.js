@@ -5,7 +5,7 @@ import { blogPostsSwe } from './blogPostData';
 import {formSwe} from './formData';
 
 
-export default {
+export const sv = {
   navbar: {
     about: 'Om oss',
     blog: 'Blogg',
