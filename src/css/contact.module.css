@@ -111,8 +111,13 @@
     padding: .4rem .5rem;
 }
 
+.textAreaContainer {
+    display: flex;
+    flex-direction: column;
+}
 .contactText{
-    min-height: 16.5rem;
+    min-width: 100%;
+    min-height: 17rem;
 }
 
 .dropDownMenu:hover, .submitForm:hover {
