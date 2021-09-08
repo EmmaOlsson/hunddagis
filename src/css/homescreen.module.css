@@ -120,6 +120,7 @@
         flex-direction: column;
         position: unset;
         padding: unset;
+        margin-top: .2rem;
     }
 
     .infoBox {
