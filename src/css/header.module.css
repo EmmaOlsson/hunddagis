@@ -69,6 +69,10 @@ header {
   cursor: pointer;
 }
 
+.flag:hover {
+  opacity: 0.8;
+}
+
 .hamburgerMenu {
   display: none;
   color: var(--hundkojan-blue);
@@ -109,6 +113,7 @@ header {
   .hamburgerMenu {
     display: flex;
     font-size: 1.3rem;
+    cursor: pointer;
   }
 
   .imgLogo {
@@ -127,6 +132,7 @@ header {
   .language {
     display: none;
     margin-left: 0;
+    z-index: 2;
   }
 
   #hidden {
@@ -142,6 +148,7 @@ header {
     height: 13rem;
     background: var(--white-blue);
     padding: 4rem 0 1rem;
+    z-index: 1;
   }
 
   #hiddenFlag {

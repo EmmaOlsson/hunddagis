@@ -26,7 +26,11 @@ const Header = () => {
       </Link>
 
       <nav className={Styles.nav}>
-        <ul className={Styles.navList} id={isOpen ? `${Styles.hidden}` : ''}>
+        <ul
+          className={Styles.navList}
+          id={isOpen ? `${Styles.hidden}` : ''}
+          onClick={() => setIsOpen(false)}
+        >
           <Link to='/about' className={Styles.navListItem}>
             {t('navbar.about')}
           </Link>
@@ -41,6 +45,7 @@ const Header = () => {
           </Link>
         </ul>
         <div
+          onClick={() => setIsOpen(false)}
           className={Styles.language}
           id={isOpen ? `${Styles.hiddenFlag}` : ''}
         >
