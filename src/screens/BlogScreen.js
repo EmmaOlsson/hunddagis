@@ -16,7 +16,6 @@ const BlogScreen = () => {
       returnObjects: true,
     });
 
-    console.log('hi from useEffect');
     const sortedDataFromi18n = sortPosts(sort, blogDataFromi18n);
     setPosts(sortedDataFromi18n);
     handleFilter(filter, sortedDataFromi18n);
