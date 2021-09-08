@@ -16,11 +16,20 @@ const BlogScreen = () => {
       returnObjects: true,
     });
 
+    // const sortedDataFromi18n = [...blogDataFromi18n].sort(function (a, b) {
+    //   var aDate = new Date(a.date);
+    //   var bDate = new Date(b.date);
+
+    //   if (sort === 'latest') return bDate - aDate;
+    //   else if (sort === 'oldest') return aDate - bDate;
+    // });
+
     const sortedDataFromi18n = sortPosts(sort, blogDataFromi18n);
+    setPosts(sortedDataFromi18n);
     setFilteredPosts(sortedDataFromi18n);
   }, [i18n, t]);
 
-  const handleFilter = (value) => {
+  const handleFilter = (value, posts) => {
     console.log('posts: ' + posts);
     switch (value) {
       case 'all':
@@ -45,7 +54,7 @@ const BlogScreen = () => {
     setFilter(value);
   };
 
-  const handleSort = (value) => {
+  const handleSort = (value, posts) => {
     const sortedFilteredPosts = [...filteredPosts].sort(function (a, b) {
       var aDate = new Date(a.date);
       var bDate = new Date(b.date);
@@ -108,7 +117,7 @@ const BlogScreen = () => {
               <select
                 className={Styles.select}
                 id={Styles.sort}
-                onChange={(e) => handleSort(e.target.value)}
+                onChange={(e) => handleSort(e.target.value, posts)}
               >
                 <option className={Styles.option} value='latest'>
                   {t('blog.filter.latest')}
