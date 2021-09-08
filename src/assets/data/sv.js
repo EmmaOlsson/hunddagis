@@ -1,9 +1,9 @@
-import { servicesSwe } from './servicesData'
+import { servicesSwe } from './servicesData';
 import { staffDataSwe } from './staffData';
 import { aboutUsDataSwe } from './aboutUsData';
 import { blogPostsSwe } from './blogPostData';
-import {formSwe} from './formData';
-
+import { formSwe } from './formData';
+import { questionsSwe } from './Faq';
 
 export const sv = {
   navbar: {
@@ -18,7 +18,7 @@ export const sv = {
     openingHours: {
       title: 'Våra öppettider:',
       dropOff: 'Inlämning: 07:00 - 09:00',
-      pickUp: 'Hämtning: 14:00 - 17:30'
+      pickUp: 'Hämtning: 14:00 - 17:30',
     },
     ourServices: {
       title: 'Våra tjänster',
@@ -26,8 +26,8 @@ export const sv = {
     },
     signUp: {
       title: 'Intresserad av en plats?',
-      signUp: 'Skicka ansökan'
-    }
+      signUp: 'Skicka ansökan',
+    },
   },
 
   contact: {
@@ -44,14 +44,14 @@ export const sv = {
     contactForm: {
       title: 'Kontaktformulär',
       formData: formSwe,
-    }
+    },
   },
 
   footer: {
-    about: "Om oss",
-    blog: "Blogg",
-    questions: "Vanliga frågor",
-    contact: "Kontakt"
+    about: 'Om oss',
+    blog: 'Blogg',
+    questions: 'Vanliga frågor',
+    contact: 'Kontakt',
   },
 
   faq: {
@@ -59,55 +59,29 @@ export const sv = {
     subHeading:
       'Självklart har du som ägare av en fyrbent vän många frågor. Här har vi samlat de vanligaste frågorna med svar. Skulle svaret på din fråga inte finnas är du välkommen att kontakta oss',
     link: ' här!',
-    questions: [
-      {
-        title: 'Hur många hundar tar ni emot samtidigt?',
-        answer: '',
-      },
-      {
-        title: 'Hur ser en dag ut hos er?',
-        answer: '',
-      },
-      {
-        title: 'Hur lång tid tar det att få en dagisplats?',
-        answer: '',
-      },
-      {
-        title: 'Tar ni emot alla raser?',
-        answer: '',
-      },
-      {
-        title: 'Kan man ha hundar över natten hos er?',
-        answer: '',
-      },
-      {
-        title: 'Tar ni emot okastrerade hundar?',
-        answer: '',
-      },
-    ],
+    questions: questionsSwe,
   },
 
   about: {
     aboutUs: {
       title: '- Vi tar hand om din bästa vän!',
-      aboutUsData: aboutUsDataSwe
+      aboutUsData: aboutUsDataSwe,
     },
 
     ourServices: {
       title: 'Våra tjänster',
-      servicesData: servicesSwe
-      
+      servicesData: servicesSwe,
     },
 
     ourStaff: {
       title: 'Vår personal',
-      staffData: staffDataSwe
+      staffData: staffDataSwe,
     },
   },
 
   blog: {
     title: 'Hundkojans blogg',
     publishedText: 'Publicerat av',
-    blogPostData: blogPostsSwe
+    blogPostData: blogPostsSwe,
   },
-}
+};

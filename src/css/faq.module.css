@@ -1,6 +1,7 @@
 .mainContainer {
   width: 90%;
   margin: 0rem auto;
+  min-height: 60vh;
 }
 
 .heading {
@@ -42,6 +43,7 @@
   font-size: 0.8rem;
   margin-right: 1rem;
   padding-bottom: 1rem;
+  max-width: 90%;
 }
 
 .buttonContainer {
