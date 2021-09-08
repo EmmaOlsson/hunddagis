@@ -39,7 +39,7 @@ const BlogScreen = () => {
         setFilteredPosts(filteredPosts);
     }
 
-    setIsFiltered(value);
+   /*  setIsFiltered(value); */
   };
 
   const handleSort = (value) => {
@@ -61,7 +61,7 @@ const BlogScreen = () => {
 
     setFilteredPosts(sortedFilteredPosts);
     setPosts(sortedPosts);
-    setIsSorted(value);
+    /* setIsSorted(value); */
   };
 
   return (
