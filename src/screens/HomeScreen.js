@@ -35,8 +35,8 @@ const HomeScreen = () => {
           <article className={Styles.infoBox} >
             <h3>{t('startPage.title')}</h3>
             <p>{t('startPage.openingHours.title')}</p>
-            <p>Inlämning: 07:00 - 09:00</p>
-            <p>Hämtning: 14:00 - 17:30</p>
+            <p>{t('startPage.openingHours.dropOff')}</p>
+            <p>{t('startPage.openingHours.pickUp')}</p>
           </article>
 
           <article className={Styles.applicationBox} >

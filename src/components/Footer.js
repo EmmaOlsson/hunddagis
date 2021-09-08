@@ -21,11 +21,9 @@ const Footer = () => {
                 <Link to='/faq' className={Styles.footerLink} >{t('footer.questions')}</Link>
 
                 <Link to='/contact' className={Styles.footerLink} >{t('footer.contact')}</Link>
-
               </ul>
             </div>
 
-            
             <div className={Styles.footerBottom} >
               <h2 className={Styles.footerText} >Hundkojan</h2>
               <div className={Styles.footerLine} ></div>
@@ -35,8 +33,6 @@ const Footer = () => {
         </footer>
     </section>
   )
-  
-
 };
 
 export default Footer;
