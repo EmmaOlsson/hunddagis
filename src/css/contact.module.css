@@ -112,9 +112,25 @@
 }
 
 .contactText{
-    min-height: 17rem;
+    min-height: 16.5rem;
 }
 
-.dropDownMenu:hover, .submitForm:hover{
+.dropDownMenu:hover, .submitForm:hover {
     cursor: pointer;
+    background: var(--white-regular)
 }
+
+.submitForm {
+    background: var(--white-blue);
+    box-shadow: var(--grey-blue) 0px 1px 5px;
+}
+
+
+/* Responsive */
+
+/* @media only screen and (max-width: 900px){
+    .contactDetailsContainer {
+        display: flex;
+        flex-direction: column;
+    }
+} */

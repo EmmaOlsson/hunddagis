@@ -6,7 +6,7 @@ import { useHistory } from 'react-router';
 
 const ContactScreen = () => {
 
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const history = useHistory();
 
@@ -53,7 +53,6 @@ const ContactScreen = () => {
               </div>
             </div>
           </div>
-
         </div>
 
         {/* Contact Form */}
@@ -62,20 +61,20 @@ const ContactScreen = () => {
           <h3 className={style.contactFormTitle}>Kontaktformulär</h3>
             <ul className={style.contactFormContact}>
               <li>
-                <label for="name">Förnamn:</label>
-                <input type="text"></input>
+                <label for="firstName">Förnamn:</label>
+                <input type="text" id="firstName"></input>
               </li>
               <li>
-                <label for="name">Efternamn:</label>
-                <input type="text"></input>
+                <label for="lastName">Efternamn:</label>
+                <input type="text" id="lastName"></input>
               </li>
               <li>
-                <label for="name">Email:</label>
-                <input type="text"></input>
+                <label for="email">Email:</label>
+                <input type="email" id="email"></input>
               </li>
               <li>
                 <label for="dropDownMenu">Ämne:</label>
-                <select className={style.dropDownMenu}>
+                <select className={style.dropDownMenu} id="dropDownMenu">
                   <option value="booking">Boka plats</option>
                   <option value="questions">Fråga om tjänst</option>
                   <option value="feedback">Feedback</option>
@@ -83,8 +82,8 @@ const ContactScreen = () => {
                 </select>
               </li>
               <li>
-                <label for="name">Meddelande:</label>
-                <input type="text" className={style.contactText}></input>
+                <label for="message">Meddelande:</label>
+                <input type="text" className={style.contactText}id="message"></input>
               </li>
               <li>
                 <input type="submit" value="Skicka" onClick={handleClick} className={style.submitForm}></input>
@@ -92,9 +91,6 @@ const ContactScreen = () => {
             </ul>
           </form>
         </aside>
-
-
-
       </div>
     </section>
   );
