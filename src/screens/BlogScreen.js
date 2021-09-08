@@ -6,8 +6,6 @@ import { useTranslation } from 'react-i18next';
 const BlogScreen = () => {
   const [posts, setPosts] = useState([]);
   const [filteredPosts, setFilteredPosts] = useState([]);
-  const [isSorted, setIsSorted] = useState('');
-  const [isFiltered, setIsFiltered] = useState('');
 
   const { t, i18n } = useTranslation();
 
