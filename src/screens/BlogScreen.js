@@ -6,6 +6,8 @@ import { useTranslation } from 'react-i18next';
 const BlogScreen = () => {
   const [posts, setPosts] = useState([]);
   const [filteredPosts, setFilteredPosts] = useState([]);
+  const [filter, setFilter] = useState('all');
+  const [sort, setSort] = useState('latest');
 
   const { t, i18n } = useTranslation();
 
@@ -13,8 +15,9 @@ const BlogScreen = () => {
     const blogDataFromi18n = i18n.t('blog.blogPostData', {
       returnObjects: true,
     });
-    setPosts(blogDataFromi18n);
-    setFilteredPosts(blogDataFromi18n);
+
+    const sortedDataFromi18n = sortPosts(sort, blogDataFromi18n);
+    setFilteredPosts(sortedDataFromi18n);
   }, [i18n, t]);
 
   const handleFilter = (value) => {
@@ -39,7 +42,7 @@ const BlogScreen = () => {
         setFilteredPosts(filteredPosts);
     }
 
-   /*  setIsFiltered(value); */
+    setFilter(value);
   };
 
   const handleSort = (value) => {
@@ -61,7 +64,19 @@ const BlogScreen = () => {
 
     setFilteredPosts(sortedFilteredPosts);
     setPosts(sortedPosts);
-    /* setIsSorted(value); */
+    setSort(value);
+  };
+
+  const sortPosts = (value, posts) => {
+    const sortedPosts = [...posts].sort(function (a, b) {
+      var aDate = new Date(a.date);
+      var bDate = new Date(b.date);
+
+      if (value === 'latest') return bDate - aDate;
+      else if (value === 'oldest') return aDate - bDate;
+    });
+
+    return sortedPosts;
   };
 
   return (
@@ -77,7 +92,7 @@ const BlogScreen = () => {
               <select
                 className={Styles.select}
                 id={Styles.filter}
-                onChange={(e) => handleFilter(e.target.value)}
+                onChange={(e) => handleFilter(e.target.value, posts)}
               >
                 <option className={Styles.option} value='all'>
                   {t('blog.filter.all')}
@@ -93,9 +108,7 @@ const BlogScreen = () => {
               <select
                 className={Styles.select}
                 id={Styles.sort}
-                onChange={(e) =>
-                  handleSort(e.target.value, filteredPosts, posts)
-                }
+                onChange={(e) => handleSort(e.target.value)}
               >
                 <option className={Styles.option} value='latest'>
                   {t('blog.filter.latest')}
