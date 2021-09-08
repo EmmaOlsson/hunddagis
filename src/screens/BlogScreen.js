@@ -11,6 +11,18 @@ const BlogScreen = () => {
 
   const { t, i18n } = useTranslation();
 
+  useEffect(() => {
+    const blogDataFromi18n = i18n.t('blog.blogPostData', {
+      returnObjects: true,
+    });
+
+    console.log('hi from useEffect');
+    const sortedDataFromi18n = sortPosts(sort, blogDataFromi18n);
+    setPosts(sortedDataFromi18n);
+    handleFilter(filter, sortedDataFromi18n);
+  }, [i18n, t, filter, sort]); // eslint-disable-line react-hooks/exhaustive-deps
+  //  using eslint-disable to remove dependency-warning as I for now dont find a better solution that doesnt include me repeating a lot of code
+
   const handleFilter = (value, posts) => {
     switch (value) {
       case 'all':
@@ -54,17 +66,6 @@ const BlogScreen = () => {
 
     return sortedPosts;
   };
-
-  useEffect(() => {
-    const blogDataFromi18n = i18n.t('blog.blogPostData', {
-      returnObjects: true,
-    });
-
-    console.log('hi from useEffect');
-    const sortedDataFromi18n = sortPosts(sort, blogDataFromi18n);
-    setPosts(sortedDataFromi18n);
-    handleFilter(filter, sortedDataFromi18n);
-  }, [i18n, t, filter, sort]);
 
   return (
     <section>
