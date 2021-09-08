@@ -32,7 +32,7 @@ const FaqScreen = () => {
         <div className={Styles.questionWrapper} key={index}>
           <div className={Styles.questionContainer}>
             <h5 className={Styles.question}>{question.title}</h5>
-            <p className={open === index && Styles.answer}>
+            <p className={open === index ? Styles.answer : ''}>
               {open === index ? question.answer : ''}
             </p>
           </div>
