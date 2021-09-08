@@ -45,22 +45,9 @@ const BlogScreen = () => {
     setFilter(value);
   };
 
-  const handleSort = (value, posts) => {
-    const sortedFilteredPosts = [...filteredPosts].sort(function (a, b) {
-      var aDate = new Date(a.date);
-      var bDate = new Date(b.date);
-
-      if (value === 'latest') return bDate - aDate;
-      else return aDate - bDate;
-    });
-
-    const sortedPosts = [...posts].sort(function (a, b) {
-      var aDate = new Date(a.date);
-      var bDate = new Date(b.date);
-
-      if (value === 'latest') return bDate - aDate;
-      else return aDate - bDate;
-    });
+  const handleSort = (value) => {
+    const sortedFilteredPosts = sortPosts(value, filteredPosts);
+    const sortedPosts = sortPosts(value, posts);
 
     setFilteredPosts(sortedFilteredPosts);
     setPosts(sortedPosts);
@@ -69,11 +56,11 @@ const BlogScreen = () => {
 
   const sortPosts = (value, posts) => {
     const sortedPosts = [...posts].sort(function (a, b) {
-      var aDate = new Date(a.date);
-      var bDate = new Date(b.date);
-
-      if (value === 'latest') return bDate - aDate;
-      else if (value === 'oldest') return aDate - bDate;
+      if (value === 'latest') {
+        return new Date(b.date) - new Date(a.date);
+      } else if (value === 'oldest') {
+        return new Date(a.date) - new Date(b.date);
+      }
     });
 
     return sortedPosts;
@@ -108,7 +95,7 @@ const BlogScreen = () => {
               <select
                 className={Styles.select}
                 id={Styles.sort}
-                onChange={(e) => handleSort(e.target.value, posts)}
+                onChange={(e) => handleSort(e.target.value)}
               >
                 <option className={Styles.option} value='latest'>
                   {t('blog.filter.latest')}
