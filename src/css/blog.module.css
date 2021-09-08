@@ -57,13 +57,25 @@
   width: 100%;
   justify-content: space-between;
 }
+
+.label {
+  color: var(--black-sky);
+  font-size: 0.9rem;
+}
+
 .select {
   appearance: none;
   background-color: transparent;
   border: none;
-  padding: 0 0.5rem;
+  padding: 0 0.5rem 0 0.3rem;
   margin: 0;
   outline: none;
+  cursor: pointer;
+  color: var(--black-sky);
+}
+
+.option {
+  color: var(--hundkojan-blue);
 }
 
 /* Responsive */

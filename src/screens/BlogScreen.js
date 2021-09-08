@@ -73,7 +73,9 @@ const BlogScreen = () => {
           <div className={Styles.topContainer}>
             <h2>{t('blog.title')}</h2>
             <section className={Styles.selectContainer}>
-              <label>{t('blog.blogPostData.filters.filterLabel')}:</label>
+              <label className={Styles.label}>
+                {t('blog.blogPostData.filters.filterLabel')}:
+              </label>
               <select
                 className={Styles.select}
                 id={Styles.filter}
