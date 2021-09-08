@@ -6,7 +6,7 @@ import { formEng } from './formData';
 import { questionsEng } from './Faq';
 import { blogFiltersEng } from './blogFilter';
 
-export default {
+export const en = {
   navbar: {
     about: 'About',
     blog: 'Blog',
