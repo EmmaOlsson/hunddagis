@@ -14,7 +14,7 @@ export default {
   },
 
   startPage: {
-    title: 'Hundkojan dog care center',
+    title: 'Hundkojan dog daycare',
     openingHours: {
       title: 'Our opening hours:',
       dropOff: 'Drop off: 07:00 - 09:00',
