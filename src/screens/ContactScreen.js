@@ -17,10 +17,8 @@ const ContactScreen = () => {
 
   return (
     <section className={style.logoContainer}>
-      {/* Den här blir dubbel då det finns två className som är contactTitle */}
-{/*       <div className={style.contactTitle}> */}
-        <h2 className={style.contactTitle}>{t('contact.title')}</h2>
-    {/*   </div> */}
+
+      <h2 className={style.contactTitle}>{t('contact.title')}</h2>
 
       <div className={style.contactDetailsContainer}>
         <div className={style.leftContainer}>
