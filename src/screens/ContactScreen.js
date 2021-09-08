@@ -61,19 +61,19 @@ const ContactScreen = () => {
           <h3 className={style.contactFormTitle}>{t('contact.contactForm.title')}</h3>
             <ul className={style.contactFormContact}>
               <li>
-                <label htmlFor="firstName">{t('contact.contactForm.formData.firstName')}</label>
+                <label for="firstName">{t('contact.contactForm.formData.firstName')}</label>
                 <input type="text" id="firstName"></input>
               </li>
               <li>
-                <label htmlFor="lastName">{t('contact.contactForm.formData.lastName')}</label>
+                <label for="lastName">{t('contact.contactForm.formData.lastName')}</label>
                 <input type="text" id="lastName"></input>
               </li>
               <li>
-                <label htmlFor="email">{t('contact.contactForm.formData.email')}</label>
+                <label for="email">{t('contact.contactForm.formData.email')}</label>
                 <input type="email" id="email"></input>
               </li>
               <li>
-                <label htmlFor="dropDownMenu">{t('contact.contactForm.formData.subject')}</label>
+                <label for="dropDownMenu">{t('contact.contactForm.formData.subject')}</label>
                 <select className={style.dropDownMenu} id="dropDownMenu">
                   <option value="booking">{t('contact.contactForm.formData.subject')}</option>
                   <option value="questions">{t('contact.contactForm.formData.subject')}</option>
@@ -82,7 +82,7 @@ const ContactScreen = () => {
                 </select>
               </li>
               <li className={style.textAreaContainer}>
-                <label htmlFor="message">{t('contact.contactForm.formData.message')}</label>
+                <label for="message">{t('contact.contactForm.formData.message')}</label>
                 <textarea type="text" className={style.contactText}id="message"></textarea>
               </li>
               <li>
