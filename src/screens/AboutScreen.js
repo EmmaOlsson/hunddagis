@@ -13,24 +13,22 @@ const AboutScreen = () => {
 
   const { t, i18n } = useTranslation();
 
-  // About us
+  
   useEffect(() => {
+
+    //About us
     const aboutUsDataFromi18n = i18n.t('about.aboutUs.aboutUsData', {
       returnObjects: true
     })
     setAboutUsData(aboutUsDataFromi18n)
-  }, [i18n, t])
 
-  // Services
-  useEffect(() => {
+    // Services
     const servicesDataFromi18n = i18n.t('about.ourServices.servicesData', {
       returnObjects: true
     })
     setServicesData(servicesDataFromi18n)
-  }, [i18n, t])
 
-  // Staff
-  useEffect(() => {
+    // Staff
     const staffDataFromi18n = i18n.t('about.ourStaff.staffData', {
       returnObjects: true
     })
@@ -90,44 +88,6 @@ const AboutScreen = () => {
         </article>
       </div>
     </main>
-
-{/* Contact Form */}
-{/*         <aside className={Styles.contactContainer}>
-          <h2 className={Styles.aboutTitles}>Kontakta oss</h2>
-          <form className={Styles.contactForm}>
-            <ul className={Styles.contactFormContact}>
-              <li>
-                <label for="name">Förnamn:</label>
-                <input type="text"></input>
-              </li>
-              <li>
-                <label for="name">Efternamn:</label>
-                <input type="text"></input>
-              </li>
-              <li>
-                <label for="name">Email:</label>
-                <input type="text"></input>
-              </li>
-              <li>
-                <label for="dropDownMenu">Ämne:</label>
-                <select>
-                  <option value="booking">Boka plats</option>
-                  <option value="questions">Fråga om tjänst</option>
-                  <option value="feedback">Feedback</option>
-                  <option value="complaint">Klagomål</option>
-                </select>
-              </li>
-              <li>
-                <label for="name">Innehåll:</label>
-                <input className={Styles.contactText}></input>
-              </li>
-              <li>
-                <input type="submit" value="Skicka"></input>
-              </li>
-            </ul>
-          </form>
-        </aside> */}
-
   </section>;
 };
 
