@@ -69,6 +69,10 @@ header {
   cursor: pointer;
 }
 
+.flag:hover {
+  opacity: 0.8;
+}
+
 .hamburgerMenu {
   display: none;
   color: var(--hundkojan-blue);
