@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 const ContactScreen = () => {
 
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <section className={style.logoContainer}>
