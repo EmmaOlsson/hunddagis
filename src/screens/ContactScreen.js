@@ -61,28 +61,28 @@ const ContactScreen = () => {
           <h3 className={style.contactFormTitle}>{t('contact.contactForm.title')}</h3>
             <ul className={style.contactFormContact}>
               <li>
-                <label for="firstName">{t('contact.contactForm.formData.firstName')}</label>
+                <label htmlFor="firstName">{t('contact.contactForm.formData.firstName')}</label>
                 <input type="text" id="firstName"></input>
               </li>
               <li>
-                <label for="lastName">{t('contact.contactForm.formData.lastName')}</label>
+                <label htmlFor="lastName">{t('contact.contactForm.formData.lastName')}</label>
                 <input type="text" id="lastName"></input>
               </li>
               <li>
-                <label for="email">{t('contact.contactForm.formData.email')}</label>
+                <label htmlFor="email">{t('contact.contactForm.formData.email')}</label>
                 <input type="email" id="email"></input>
               </li>
               <li>
-                <label for="dropDownMenu">{t('contact.contactForm.formData.subject')}</label>
+                <label htmlFor="dropDownMenu">{t('contact.contactForm.formData.subject.title')}</label>
                 <select className={style.dropDownMenu} id="dropDownMenu">
-                  <option value="booking">{t('contact.contactForm.formData.subject')}</option>
-                  <option value="questions">{t('contact.contactForm.formData.subject')}</option>
-                  <option value="feedback">{t('contact.contactForm.formData.subject')}</option>
-                  <option value="complaint">{t('contact.contactForm.formData.subject')}</option>
+                  <option value="booking">{t('contact.contactForm.formData.subject.position')}</option>
+                  <option value="questions">{t('contact.contactForm.formData.subject.aboutServices')}</option>
+                  <option value="feedback">{t('contact.contactForm.formData.subject.feedback')}</option>
+                  <option value="complaint">{t('contact.contactForm.formData.subject.complaint')}</option>
                 </select>
               </li>
               <li className={style.textAreaContainer}>
-                <label for="message">{t('contact.contactForm.formData.message')}</label>
+                <label htmlFor="message">{t('contact.contactForm.formData.message')}</label>
                 <textarea type="text" className={style.contactText}id="message"></textarea>
               </li>
               <li>

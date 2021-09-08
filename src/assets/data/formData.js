@@ -20,7 +20,7 @@ export const formEng =
     {
          firstName: "First name:",
          lastName: "Last name:",
-         email: "e-mail:",
+         email: "E-mail:",
          subject: {
             title: "Subject",
             position: "Apply for a position",
