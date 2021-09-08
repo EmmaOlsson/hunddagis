@@ -101,13 +101,13 @@
 
 .contactFormTitle{
     color: var(--black-sky);
-    padding: 1rem 0;
+    padding: 2rem 0;
     text-align: center;
     font-weight: 300;
 }
 
 .contactFormContact li{
-    padding-bottom: .8rem;
+    padding-bottom: 1rem;
 }
 
 .contactFormContact label{
@@ -124,7 +124,7 @@
 
 .contactFormContact input, .contactFormContact select, .contactFormContact textarea{
     border: none;
-    padding: .4rem .5rem;
+    padding: .6rem .5rem;
 }
 
 .textAreaContainer {
@@ -132,8 +132,8 @@
     flex-direction: column;
 }
 .contactText{
-    min-height: 16rem;
     min-width: 100%;
+    min-height: 16rem;
 }
 
 .dropDownMenu:hover, .submitForm:hover {
