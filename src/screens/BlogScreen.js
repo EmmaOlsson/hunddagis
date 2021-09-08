@@ -11,16 +11,6 @@ const BlogScreen = () => {
 
   const { t, i18n } = useTranslation();
 
-  useEffect(() => {
-    const blogDataFromi18n = i18n.t('blog.blogPostData', {
-      returnObjects: true,
-    });
-
-    const sortedDataFromi18n = sortPosts(sort, blogDataFromi18n);
-    setPosts(sortedDataFromi18n);
-    handleFilter(filter, sortedDataFromi18n);
-  }, [i18n, t]);
-
   const handleFilter = (value, posts) => {
     switch (value) {
       case 'all':
@@ -56,15 +46,25 @@ const BlogScreen = () => {
 
   const sortPosts = (value, posts) => {
     const sortedPosts = [...posts].sort(function (a, b) {
-      if (value === 'latest') {
-        return new Date(b.date) - new Date(a.date);
-      } else if (value === 'oldest') {
+      if (value === 'oldest') {
         return new Date(a.date) - new Date(b.date);
       }
+      return new Date(b.date) - new Date(a.date);
     });
 
     return sortedPosts;
   };
+
+  useEffect(() => {
+    const blogDataFromi18n = i18n.t('blog.blogPostData', {
+      returnObjects: true,
+    });
+
+    console.log('hi from useEffect');
+    const sortedDataFromi18n = sortPosts(sort, blogDataFromi18n);
+    setPosts(sortedDataFromi18n);
+    handleFilter(filter, sortedDataFromi18n);
+  }, [i18n, t, filter, sort]);
 
   return (
     <section>
