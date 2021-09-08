@@ -17,13 +17,16 @@
 .footerLinks {
     display: flex;
     flex-direction: column;
-
 }
 
 .footerLink {
     line-height: 2rem;
     cursor: pointer;
     color: var(--regular-black);
+}
+
+.footerLink:hover {
+    opacity: 80%;
 }
 
 .footerTop {

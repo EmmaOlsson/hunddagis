@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    margin-top: .5rem;
 }
 
 .topSection {
@@ -16,6 +17,7 @@
     width: 100%;
     height: 100%;
     opacity: 60%;
+    border-radius: .4rem;
 }
 
 .middleSection {
@@ -103,4 +105,63 @@
 
 .priceInfo h3 {
     letter-spacing: .1rem;
+}
+
+@media screen and (max-width: 900px) { 
+    
+    .sectionContainer {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .middleSection {
+        display: flex;
+        flex-direction: column;
+        position: unset;
+        padding: unset;
+    }
+
+    .infoBox {
+        height: 100%;
+        align-items: center;
+        line-height: 1.5rem;
+        padding: 2rem;
+        background-color: var(--light-blue);
+        border-radius: .4rem;
+        color: var(--black-sky);
+    }
+    
+    .applicationBox {
+        height: 100%;
+        justify-content: center;
+        margin-top: .5rem;
+    }
+
+    .applicationBoxContent {
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.5rem;
+        padding: 2rem;
+        background-color: var(--light-blue);
+        border-radius: .4rem;
+        color: var(--black-sky);
+        box-shadow: unset;
+    }
+
+    .applicationButton {
+        background-color: var(--white-blue);
+    }
+
+    .servicesContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .priceInfo {
+        margin-bottom: .5rem;
+    }
 }

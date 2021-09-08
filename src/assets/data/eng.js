@@ -2,6 +2,7 @@ import { staffDataEng } from './staffData'
 import { servicesEng } from './servicesData'
 import { aboutUsDataEng } from './aboutUsData'
 import { blogPostsEng } from './blogPostData'
+import { formEng } from './formData'
 
 
 export default {
@@ -39,6 +40,11 @@ export default {
       phone: 'Phone:',
       Email: 'E-mail:',
     },
+
+    contactForm: {
+      title: 'Contact form',
+      formData: formEng,
+    }
   },
 
   footer: {
