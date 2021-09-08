@@ -109,6 +109,7 @@ header {
   .hamburgerMenu {
     display: flex;
     font-size: 1.3rem;
+    cursor: pointer;
   }
 
   .imgLogo {
