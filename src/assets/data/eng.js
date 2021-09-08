@@ -4,6 +4,7 @@ import { aboutUsDataEng } from './aboutUsData';
 import { blogPostsEng } from './blogPostData';
 import { formEng } from './formData';
 import { questionsEng } from './Faq';
+import { blogFiltersEng } from './blogFilter';
 
 export default {
   navbar: {
@@ -83,5 +84,6 @@ export default {
     title: 'Blog of Hundkojan',
     publishedText: 'Published by',
     blogPostData: blogPostsEng,
+    filter: blogFiltersEng,
   },
 };

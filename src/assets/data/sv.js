@@ -4,6 +4,7 @@ import { aboutUsDataSwe } from './aboutUsData';
 import { blogPostsSwe } from './blogPostData';
 import { formSwe } from './formData';
 import { questionsSwe } from './Faq';
+import { blogFiltersSwe } from './blogFilter';
 
 export const sv = {
   navbar: {
@@ -83,5 +84,6 @@ export const sv = {
     title: 'Hundkojans blogg',
     publishedText: 'Publicerat av',
     blogPostData: blogPostsSwe,
+    filter: blogFiltersSwe,
   },
 };
