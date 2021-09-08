@@ -17,13 +17,16 @@ const ContactScreen = () => {
 
   return (
     <section className={style.logoContainer}>
-      <div className={style.contactTitle}>
+      {/* Den här blir dubbel då det finns två className som är contactTitle */}
+{/*       <div className={style.contactTitle}> */}
         <h2 className={style.contactTitle}>{t('contact.title')}</h2>
-      </div>
+    {/*   </div> */}
 
       <div className={style.contactDetailsContainer}>
         <div className={style.leftContainer}>
+          <section className={style.imgContainer}>
           <img className={style.img} alt="location" src={hunddagis}></img>
+          </section>
           <div className={style.contactDetails}>
             <div className={style.content}>
               <div className={style.titleContainer}>
