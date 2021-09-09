@@ -33,12 +33,13 @@
 .img{
     width: 100%;
     height: 100%;
+    border-radius: .2rem;
 }
 
 .contactTitle {
     font-size: 1.5rem;
-    margin-top: 2rem;
-    color: var(--hundkojan-blue);
+    margin-bottom: 1rem;
+    color: var(--black-sky);
 }
 .contactDetails {
     height: 100%;
@@ -50,6 +51,7 @@
     border: 4px solid var(--sky-blue);
     color: var(--hundkojan-blue);
     line-height: 2rem;
+    border-radius: .2rem;
 }
 
 .contactDetailsTitle {
