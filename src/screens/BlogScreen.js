@@ -19,8 +19,8 @@ const BlogScreen = () => {
     const sortedDataFromi18n = sortPosts(sort, blogDataFromi18n);
     setPosts(sortedDataFromi18n);
     handleFilter(filter, sortedDataFromi18n);
-  }, [i18n, t, filter, sort]); // eslint-disable-line react-hooks/exhaustive-deps
-  //  using eslint-disable to remove dependency-warning as I for now dont find a better solution that doesnt include me repeating a lot of code
+    // eslint-disable-next-line
+  }, [i18n, t, filter, sort]);
 
   const handleFilter = (value, posts) => {
     switch (value) {
