@@ -91,7 +91,9 @@ const BlogScreen = () => {
                   {t('blog.filter.articles')}
                 </option>
               </select>
-              <label>{t('blog.filter.sortLabel')}:</label>
+              <label className={Styles.label}>
+                {t('blog.filter.sortLabel')}:
+              </label>
               <select
                 className={Styles.select}
                 id={Styles.sort}
