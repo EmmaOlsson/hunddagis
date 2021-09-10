@@ -49,7 +49,7 @@ export const questionsEng = [
   },
   {
     title: 'Do you accept all races?',
-    anwser:
+    answer:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate maiores quisquam dolorem architecto deleniti repellendus exercitationem est, ab consequuntur dolor id, veniam sed adipisci ut explicabo debitis doloribus voluptatibus ducimus Et, obcaecati nam quisquam reiciendis sit quis ab possimus recusandae eos? Sapiente eius itaque quos! Qui voluptas consectetur velit est nulla maiores cum placeat, atque fuga. A natus expedita officia?',
   },
   {

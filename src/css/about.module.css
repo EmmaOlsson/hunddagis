@@ -4,10 +4,10 @@
     margin: 0 auto;
 }
 
+
+/* About */
 .topAbout{
     height: fit-content;
-    /* Ta bort height sen */
-    /* height: 100vh; */
     display: flex;
 }
 
@@ -21,19 +21,6 @@
     margin-right: .5rem;
 }
 
-.servicesContainer{
-    flex: 2;
-    text-align: center;
-}
-
-.priceList{
-    justify-content: center;
-}
-
-.aboutTitles, .offerList{
-    margin-bottom: 1rem;
-}
-
 .aboutInfo p{
     font-weight: 400;
 }
@@ -45,9 +32,21 @@
     padding-top: .5rem;
 }
 
+
+/* Services */
+.servicesContainer{
+    flex: 2;
+    text-align: center;
+}
+
+.priceList{
+    justify-content: center;
+}
+
 .offerList{
     line-height: 150%;
 }
+
 
 /* Staff */
 
@@ -90,47 +89,11 @@
     margin-bottom: 1rem;
 }
 
+/* About, Services, Staff */
 
-/* Contact Form */
-
-/* .contactForm{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 2rem;
-    border-radius: .3rem;
-    background: var(--light-blue);
+.aboutTitles, .offerList{
+    margin-bottom: 1rem;
 }
-
-.contactFormContact{
-    width: inherit;
-    text-align: left;
-}
-
-.contactFormContact li{
-    padding-bottom: 1rem;
-}
-
-.contactFormContact label{
-    color: var(--black-sky);
-    font-size: 1rem;
-    font-weight: 300;
-}
-
-.contactFormContact input, .contactFormContact select {
-    width: 100%;
-}
-
-.contactFormContact input, .contactFormContact select, .contactFormContact textarea{
-    border: none;
-    padding: .3rem .5rem;
-}
-
-.contactText{
-    min-height: 20rem;
-} */
-
-
 
 
 /* Responsive */
