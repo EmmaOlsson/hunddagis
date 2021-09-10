@@ -60,6 +60,7 @@
 .showAnswer {
   color: var(--hundkojan-blue);
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 500px) {
