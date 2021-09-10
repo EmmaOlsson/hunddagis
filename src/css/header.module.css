@@ -21,7 +21,7 @@ header {
 }
 
 .logoName {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   color: var(--hundkojan-blue);
 }
 
@@ -78,9 +78,10 @@ header {
   color: var(--hundkojan-blue);
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 900px) {
   .navList {
-    max-width: 20rem;
+    max-width: 18rem;
+    transition: linear 0.3s;
   }
 }
 
@@ -90,6 +91,10 @@ header {
   }
   .navListItem {
     font-size: 0.8rem;
+  }
+
+  .logoName {
+    font-size: 1.5rem;
   }
 
   #sweden {
@@ -103,11 +108,25 @@ header {
   .language {
     margin-left: 1rem;
   }
+
+  .navList,
+  .navListItem,
+  .logoName,
+  #sweden,
+  .flag,
+  .language {
+    transition: linear 0.3s;
+  }
 }
 
 @media only screen and (max-width: 650px) {
   header {
     height: 6rem;
+  }
+
+  header,
+  .imgLogo,
+  .logoName {
     transition: linear 0.3s;
   }
   .hamburgerMenu {
@@ -118,7 +137,10 @@ header {
 
   .imgLogo {
     transform: scale(0.8);
-    transition: linear 0.3s;
+  }
+
+  .logoName {
+    font-size: 1.3rem;
   }
 
   .navList {
